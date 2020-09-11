@@ -12,6 +12,130 @@ html {
 
 body {
   box-sizing: border-box;
-  padding: 3rem;
+  padding: 1.5rem;
+  font-family: Montserrat_Regular;
+}
+
+@font-face {
+  font-family: Montserrat_xLight;
+  src: url("../../fonts/Montserrat/Montserrat-ExtraLight.ttf");
+}
+
+@font-face {
+  font-family: Montserrat_Regular;
+  src: url("../../fonts/Montserrat/Montserrat-Regular.ttf");
+}
+
+@font-face {
+  font-family: Montserrat_Bold;
+  src: url("../../fonts/Montserrat/Montserrat-ExtraBold.ttf");
+}
+
+@font-face {
+  font-family: Montserrat_SemiBold;
+  src: url("../../fonts/Montserrat/Montserrat-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: Montserrat_Medium;
+  src: url("../../fonts/Montserrat/Montserrat-Medium.ttf");
+}
+
+.project {
+  color: white;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  height: 280rem;
+}
+
+.project__pack {
+  height: 250px;
+  padding: 0;
+}
+
+.project__pack #card1 {
+  background: #1F2D64;
+}
+
+.project__pack #card2 {
+  background: #9D98CA;
+}
+
+.project__pack #card3 {
+  background: #96DB69;
+}
+
+.project__pack #card4 {
+  background: #0a5e35;
+}
+
+.project__pack #card5 {
+  background: #9D98CA;
+}
+
+.project__pack #card6 {
+  background: #1F2D64;
+}
+
+.project__pack--card {
+  position: relative;
+  border-radius: 2rem;
+  padding: 2rem 1rem;
+}
+
+.project__pack--card h2 {
+  font-size: 4rem;
+  font-family: Montserrat_Bold;
+}
+
+.project__pack--card p {
+  font-size: 1.5rem;
+  font-family: Montserrat_Medium;
+}
+
+.project__pack--card div {
+  margin-left: 3.5rem;
+}
+
+.project__pack--card img {
+  position: relative;
+  transform: translate(80px, 55px) scale(1.6);
+}
+
+.header {
+  display: block;
+  position: relative;
+  height: 80vh;
+}
+
+.header__text {
+  display: block;
+  font-size: 1rem;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.header__text span {
+  display: block;
+}
+
+.header__text span:nth-child(1) {
+  font-family: Montserrat_SemiBold;
+  font-size: 1.4rem;
+}
+
+.header__text span:nth-child(2) {
+  font-size: 5rem;
+  font-family: Montserrat_Bold;
+}
+
+.header__logo {
+  display: inline-block;
+  position: absolute;
+  left: 1rem;
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,75 @@
+.project {
+
+    color: white;
+    text-align: left;
+    margin: 0;
+    padding:0;
+
+    height: 280rem;
+
+
+    &__pack{ 
+
+        height: 250px;
+        padding: 0;
+
+      
+
+        & #card1{
+            background: $blue;
+        }
+
+        & #card2{
+            background: $purple;
+        }
+
+        & #card3{
+            background: $lemongreen;
+        }
+
+        & #card4 {
+            background: $darkgreen;
+        }
+        
+        & #card5 {
+            background: $purple
+        }
+        & #card6 {
+            background: $blue
+        }
+
+
+
+        
+
+        &--card{
+
+            position: relative;
+            border-radius: 2rem;
+            padding: 2rem 1rem;
+            
+            & h2{
+                // margin-left: 3rem;
+                font-size: 4rem;
+                font-family: $Bold;
+            }
+
+            & p{
+
+                font-size: 1.5rem;
+                font-family: $Medium;
+            }
+
+            div{
+                margin-left: 3.5rem;
+
+               
+            }
+
+            img{
+                position: relative;
+                transform: translate(80px, 55px) scale(1.6);
+            }
+        }
+    }
+}
