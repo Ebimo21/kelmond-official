@@ -46,51 +46,54 @@ body {
   text-align: left;
   margin: 0;
   padding: 0;
-  height: 280rem;
+  height: 330rem;
 }
 
 .project__pack {
-  height: 250px;
-  padding: 0;
+  height: 400px;
+  padding: 1rem;
+  background: red;
+  border-radius: 2rem;
+  padding: 2rem 1rem;
 }
 
-.project__pack #card1 {
+.project__pack#card1 {
   background: #1F2D64;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
-.project__pack #card2 {
+.project__pack#card2 {
   background: #9D98CA;
 }
 
-.project__pack #card3 {
+.project__pack#card3 {
   background: #96DB69;
 }
 
-.project__pack #card4 {
+.project__pack#card4 {
   background: #0a5e35;
 }
 
-.project__pack #card5 {
+.project__pack#card5 {
   background: #9D98CA;
 }
 
-.project__pack #card6 {
+.project__pack#card6 {
   background: #1F2D64;
 }
 
 .project__pack--card {
   position: relative;
-  border-radius: 2rem;
-  padding: 2rem 1rem;
 }
 
 .project__pack--card h2 {
-  font-size: 4rem;
+  font-size: 3rem;
   font-family: Montserrat_Bold;
 }
 
 .project__pack--card p {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-family: Montserrat_Medium;
 }
 
@@ -101,6 +104,25 @@ body {
 .project__pack--card img {
   position: relative;
   transform: translate(80px, 55px) scale(1.6);
+}
+
+.section {
+  padding: 2.4rem;
+}
+
+.section h2 {
+  font-family: Montserrat_SemiBold;
+  font-size: 5rem;
+}
+
+.section p {
+  font-size: 1.4rem;
+}
+
+@media (min-width: 768px) {
+  .project {
+    height: 120rem;
+  }
 }
 
 .header {

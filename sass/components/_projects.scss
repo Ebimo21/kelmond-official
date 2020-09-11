@@ -5,36 +5,41 @@
     margin: 0;
     padding:0;
 
-    height: 280rem;
+    height: 330rem;
 
 
     &__pack{ 
 
-        height: 250px;
-        padding: 0;
+        height: 400px;
+        padding: 1rem;
 
-      
+      background: red;
+      border-radius: 2rem;
+            padding: 2rem 1rem;
 
-        & #card1{
+        &#card1{
             background: $blue;
+            margin-left: 1rem;
+            margin-right: 1rem;
         }
 
-        & #card2{
+        &#card2{
             background: $purple;
         }
 
-        & #card3{
+        &#card3{
             background: $lemongreen;
+
         }
 
-        & #card4 {
+        &#card4 {
             background: $darkgreen;
         }
         
-        & #card5 {
+        &#card5 {
             background: $purple
         }
-        & #card6 {
+        &#card6 {
             background: $blue
         }
 
@@ -45,18 +50,17 @@
         &--card{
 
             position: relative;
-            border-radius: 2rem;
-            padding: 2rem 1rem;
+            
             
             & h2{
                 // margin-left: 3rem;
-                font-size: 4rem;
+                font-size: 3rem;
                 font-family: $Bold;
             }
 
             & p{
 
-                font-size: 1.5rem;
+                font-size: 1.2rem;
                 font-family: $Medium;
             }
 
@@ -71,5 +75,27 @@
                 transform: translate(80px, 55px) scale(1.6);
             }
         }
+    }
+}
+
+.section{
+
+    padding: 2.4rem;
+
+    h2{
+        font-family: $Semi_Bold;
+        font-size: 5rem;
+    }
+
+    p{
+        font-size: 1.4rem;
+    }
+}
+
+
+@media (min-width: 768px){
+    .project{
+
+        height: 120rem;
     }
 }
