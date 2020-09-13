@@ -41,8 +41,37 @@
         left: 1rem;
     }
 
+    &__navIcon{
+        display: inline-block;
+        position: absolute;
+        // border: 2px solid black;
+        width: 6rem;
+        right: 10px;
+        padding: .5rem;
+        margin-top: .4rem;
+
+        &--bar{
+            display: block;
+            margin: .7rem 0  .6rem;
+            border-top: .23rem solid black;
+            position: relative;
+            
+            &.middle{
+                width: 60%;
+                margin-left: 2rem;
+            }
+
+            &.bottom{
+                width: 80%;
+                margin-left: 1rem;
+            }
+        }
+    }
 
 
+    &__bar{
+        float: right;
+    }
     
 }
 

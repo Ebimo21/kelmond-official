@@ -5,18 +5,20 @@
     margin: 0;
     padding:0;
 
-    height: 330rem;
+    height: 300rem;
 
 
     &__pack{ 
 
-        height: 400px;
-        padding: 1rem;
+        height: 40rem;
+        // padding: 1rem;
+        // margin: 2rem;
 
       background: red;
       border-radius: 2rem;
             padding: 2rem 1rem;
 
+           
         &#card1{
             background: $blue;
             margin-left: 1rem;
@@ -50,7 +52,9 @@
         &--card{
 
             position: relative;
-            
+            // width: 95%;
+            // margin: auto;
+
             
             & h2{
                 // margin-left: 3rem;

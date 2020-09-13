@@ -46,12 +46,11 @@ body {
   text-align: left;
   margin: 0;
   padding: 0;
-  height: 330rem;
+  height: 300rem;
 }
 
 .project__pack {
-  height: 400px;
-  padding: 1rem;
+  height: 40rem;
   background: red;
   border-radius: 2rem;
   padding: 2rem 1rem;
@@ -159,5 +158,35 @@ body {
   display: inline-block;
   position: absolute;
   left: 1rem;
+}
+
+.header__navIcon {
+  display: inline-block;
+  position: absolute;
+  width: 6rem;
+  right: 10px;
+  padding: .5rem;
+  margin-top: .4rem;
+}
+
+.header__navIcon--bar {
+  display: block;
+  margin: .7rem 0  .6rem;
+  border-top: .23rem solid black;
+  position: relative;
+}
+
+.header__navIcon--bar.middle {
+  width: 60%;
+  margin-left: 2rem;
+}
+
+.header__navIcon--bar.bottom {
+  width: 80%;
+  margin-left: 1rem;
+}
+
+.header__bar {
+  float: right;
 }
 /*# sourceMappingURL=main.css.map */
