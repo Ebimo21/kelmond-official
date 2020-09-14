@@ -188,11 +188,16 @@
     &__text{
 
         padding: 2rem;
-        text-align: center;
+        
+        h2{
+            font-family: $Bold;
+            text-align: center;
+        }
 
         p{
             font-size: 1.2rem;
             margin-top: 2rem;
+            
         }
 
         div span{
