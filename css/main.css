@@ -127,7 +127,7 @@ body {
 
 .section h2 {
   font-family: Montserrat_Bold;
-  font-size: 5rem;
+  font-size: 3rem;
 }
 
 .section p {
@@ -213,11 +213,13 @@ body {
 .cta__text h2 {
   font-family: Montserrat_Bold;
   text-align: center;
+  font-size: 3.2rem;
 }
 
 .cta__text p {
   font-size: 1.2rem;
   margin-top: 2rem;
+  font-family: Montserrat_Medium;
 }
 
 .cta__text div span {
