@@ -254,7 +254,7 @@ body {
 .header {
   display: block;
   position: relative;
-  height: 80vh;
+  height: 100vh;
 }
 
 .header__text {
