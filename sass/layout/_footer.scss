@@ -1,0 +1,18 @@
+.footer{
+    background: black;
+    margin: -1.5rem;
+    color: white;
+    padding: 10rem 2rem;
+    // height: 20rem; 
+    font-family: $Semi_Bold;
+    
+    h2{
+        font-size: 5rem;
+    }
+}
+
+@media (min-width: 768px){
+    .footer{
+        margin: -5rem -10rem
+    }
+}

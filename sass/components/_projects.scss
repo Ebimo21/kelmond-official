@@ -27,22 +27,32 @@
 
         &#card2{
             background: $purple;
+            margin-left: 1rem;
+            margin-right: 1rem;
         }
 
         &#card3{
             background: $lemongreen;
+            margin-left: 1rem;
+            margin-right: 1rem;
 
         }
 
         &#card4 {
             background: $darkgreen;
+            margin-left: 1rem;
+            margin-right: 1rem;
         }
         
         &#card5 {
-            background: $purple
+            background: $purple;
+            margin-left: 1rem;
+            margin-right: 1rem;
         }
         &#card6 {
-            background: $blue
+            background: $blue;
+            margin-left: 1rem;
+            margin-right: 1rem;
         }
 
 
@@ -87,7 +97,7 @@
     padding: 2.4rem;
 
     h2{
-        font-family: $Semi_Bold;
+        font-family: $Bold;
         font-size: 5rem;
     }
 
@@ -97,9 +107,113 @@
 }
 
 
+.review {
+
+    padding: 2.4rem;
+    margin: 0;
+
+    h2{
+        font-family: $Bold;
+        font-size: 2.2rem;
+        text-align: center;
+    }
+
+    &__comment{
+        background: rgb(247, 246, 246);
+        border-radius: 1rem;
+        margin: 0;
+        margin-top: 3rem;
+        padding:1.5rem;
+        font-size: 1.1rem;
+
+        p{
+            font-family: $Bold;
+            margin-top: 1.5rem;
+            span{
+                padding:0;
+                font-family: $Medium;            }
+        }
+
+        .fa{
+            color:#eee;
+            
+
+        }
+
+        p:last-child {
+            font-family: inherit;
+        }
+
+        .checked{
+            color: rgb(226, 171, 151);
+        }
+    }
+}
+
+
+@media (min-width: 576px){
+    .project{
+
+        height: 200rem;
+    }
+}
+
 @media (min-width: 768px){
     .project{
 
-        height: 120rem;
+        height: 150rem;
+    }
+}
+
+@media (min-width: 992px){
+    .project{
+
+        height: 170rem;
+    }
+}
+
+@media (min-width: 1200px){
+    .project{
+
+        height: 110rem;
+    }
+}
+
+
+.cta {
+    padding: 3rem;
+    margin: 1.5rem -1.5rem;
+    background: rgb(247, 246, 246);
+
+    &__text{
+
+        padding: 2rem;
+        text-align: center;
+
+        p{
+            font-size: 1.2rem;
+            margin-top: 2rem;
+        }
+
+        div span{
+
+            text-align: center;
+        }
+
+    }
+
+    &__btn{
+        text-align: center;
+        // width: 40%;
+
+        button{
+            border: 1px solid black;
+            background: transparent;
+
+            a{
+                color: black;
+            }
+        }
+
     }
 }

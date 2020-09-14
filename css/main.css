@@ -16,6 +16,12 @@ body {
   font-family: Montserrat_Regular;
 }
 
+@media (min-width: 768px) {
+  body {
+    padding: 5rem 10rem;
+  }
+}
+
 @font-face {
   font-family: Montserrat_xLight;
   src: url("../../fonts/Montserrat/Montserrat-ExtraLight.ttf");
@@ -64,22 +70,32 @@ body {
 
 .project__pack#card2 {
   background: #9D98CA;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .project__pack#card3 {
   background: #96DB69;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .project__pack#card4 {
   background: #0a5e35;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .project__pack#card5 {
   background: #9D98CA;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .project__pack#card6 {
   background: #1F2D64;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .project__pack--card {
@@ -110,7 +126,7 @@ body {
 }
 
 .section h2 {
-  font-family: Montserrat_SemiBold;
+  font-family: Montserrat_Bold;
   font-size: 5rem;
 }
 
@@ -118,9 +134,120 @@ body {
   font-size: 1.4rem;
 }
 
+.review {
+  padding: 2.4rem;
+  margin: 0;
+}
+
+.review h2 {
+  font-family: Montserrat_Bold;
+  font-size: 2.2rem;
+  text-align: center;
+}
+
+.review__comment {
+  background: #f7f6f6;
+  border-radius: 1rem;
+  margin: 0;
+  margin-top: 3rem;
+  padding: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.review__comment p {
+  font-family: Montserrat_Bold;
+  margin-top: 1.5rem;
+}
+
+.review__comment p span {
+  padding: 0;
+  font-family: Montserrat_Medium;
+}
+
+.review__comment .fa {
+  color: #eee;
+}
+
+.review__comment p:last-child {
+  font-family: inherit;
+}
+
+.review__comment .checked {
+  color: #e2ab97;
+}
+
+@media (min-width: 576px) {
+  .project {
+    height: 200rem;
+  }
+}
+
 @media (min-width: 768px) {
   .project {
-    height: 120rem;
+    height: 150rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .project {
+    height: 170rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .project {
+    height: 110rem;
+  }
+}
+
+.cta {
+  padding: 3rem;
+  margin: 1.5rem -1.5rem;
+  background: #f7f6f6;
+}
+
+.cta__text {
+  padding: 2rem;
+  text-align: center;
+}
+
+.cta__text p {
+  font-size: 1.2rem;
+  margin-top: 2rem;
+}
+
+.cta__text div span {
+  text-align: center;
+}
+
+.cta__btn {
+  text-align: center;
+}
+
+.cta__btn button {
+  border: 1px solid black;
+  background: transparent;
+}
+
+.cta__btn button a {
+  color: black;
+}
+
+.footer {
+  background: black;
+  margin: -1.5rem;
+  color: white;
+  padding: 10rem 2rem;
+  font-family: Montserrat_SemiBold;
+}
+
+.footer h2 {
+  font-size: 5rem;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    margin: -5rem -10rem;
   }
 }
 
