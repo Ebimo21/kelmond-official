@@ -3,7 +3,8 @@
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
 }
 
 html {
@@ -11,7 +12,8 @@ html {
 }
 
 body {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 1.5rem;
   font-family: Montserrat_Regular;
 }
@@ -118,7 +120,8 @@ body {
 
 .project__pack--card img {
   position: relative;
-  transform: translate(80px, 55px) scale(1.6);
+  -webkit-transform: translate(80px, 55px) scale(1.6);
+          transform: translate(80px, 55px) scale(1.6);
 }
 
 .section {
@@ -265,24 +268,28 @@ body {
   display: block;
   font-size: 1rem;
   position: relative;
-  top: 40%;
+  top: 45%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   text-align: center;
 }
 
 .header__text span {
   display: block;
+  margin-bottom: 2rem;
 }
 
 .header__text span:nth-child(1) {
   font-family: Montserrat_SemiBold;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
+  font-weight: 300;
 }
 
 .header__text span:nth-child(2) {
-  font-size: 5rem;
+  font-size: 7rem;
   font-family: Montserrat_Bold;
+  letter-spacing: .3rem;
 }
 
 .header__logo {
@@ -292,13 +299,14 @@ body {
 }
 
 .header__logo-text {
-  font-weight: 500;
-  font-size: 3rem;
-  transform: rotate(-90deg);
+  font-weight: 1000;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
   display: inline-block;
   position: absolute;
-  top: 11rem;
-  left: -3.6rem;
+  top: 10rem;
+  left: -1.6rem;
+  font-size: 2rem;
 }
 
 .header__navIcon {
@@ -330,4 +338,3 @@ body {
 .header__bar {
   float: right;
 }
-/*# sourceMappingURL=main.css.map */
