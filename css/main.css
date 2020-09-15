@@ -3,6 +3,7 @@
     opacity: 1;
   }
   100% {
+    opacity: 0;
     -webkit-transform: translate(-2rem);
             transform: translate(-2rem);
   }
@@ -13,8 +14,57 @@
     opacity: 1;
   }
   100% {
+    opacity: 0;
     -webkit-transform: translate(-2rem);
             transform: translate(-2rem);
+  }
+}
+
+@-webkit-keyframes fall {
+  0% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  100% {
+    -webkit-transform: translate(10rem);
+            transform: translate(10rem);
+  }
+}
+
+@keyframes fall {
+  0% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  100% {
+    -webkit-transform: translate(10rem);
+            transform: translate(10rem);
+  }
+}
+
+@-webkit-keyframes rise {
+  0% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translate(-10rem);
+            transform: translate(-10rem);
+    opacity: 1;
+  }
+}
+
+@keyframes rise {
+  0% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translate(-10rem);
+            transform: translate(-10rem);
+    opacity: 1;
   }
 }
 
@@ -412,6 +462,10 @@ body {
   position: absolute;
   right: 10px;
   text-align: right;
+  -webkit-animation-name: slide-out;
+          animation-name: slide-out;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
 }
 
 .header__navIcon span::after {
@@ -422,6 +476,10 @@ body {
   width: 2rem;
   margin-bottom: 5px;
   border: .5px solid;
+  -webkit-animation-name: fall;
+          animation-name: fall;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
 }
 
 .header__navIcon span::before {
@@ -432,13 +490,11 @@ body {
   width: 3rem;
   margin-bottom: 5px;
   border: .5px solid;
-  -webkit-animation: 2s slide=out;
-          animation: 2s slide=out;
-}
-
-.header__navIcon .animate {
-  -webkit-animation: 2s animate ease;
-          animation: 2s animate ease;
+  opacity: 1;
+  -webkit-animation-name: rise;
+          animation-name: rise;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
 }
 
 .header__navIcon--bar {
