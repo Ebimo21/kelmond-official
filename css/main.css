@@ -122,7 +122,7 @@ body {
 
 @font-face {
   font-family: Montserrat_Medium;
-  src: url("../fonts/Montserrat/");
+  src: url("../fonts/Montserrat/Montserrat-Medium.ttf");
 }
 
 .project {
@@ -158,10 +158,20 @@ body {
   margin-right: 1rem;
 }
 
+.project__pack#card3 img {
+  -webkit-transform: translate(56px, 88px) scale(1.8);
+          transform: translate(56px, 88px) scale(1.8);
+}
+
 .project__pack#card4 {
   background: #0a5e35;
   margin-left: 1rem;
   margin-right: 1rem;
+}
+
+.project__pack#card4 img {
+  -webkit-transform: translate(80px, 59px) scale(1.8);
+          transform: translate(80px, 59px) scale(1.8);
 }
 
 .project__pack#card5 {
@@ -174,6 +184,11 @@ body {
   background: #1F2D64;
   margin-left: 1rem;
   margin-right: 1rem;
+}
+
+.project__pack#card6 img {
+  -webkit-transform: translate(108px, 84px) scale(1.9);
+          transform: translate(108px, 84px) scale(1.9);
 }
 
 .project__pack--card {
@@ -206,7 +221,7 @@ body {
 
 .section h2 {
   font-family: Montserrat_Bold;
-  font-size: 3rem;
+  font-size: 5rem;
 }
 
 .section p {
@@ -292,13 +307,11 @@ body {
 .cta__text h2 {
   font-family: Montserrat_Bold;
   text-align: center;
-  font-size: 3.2rem;
 }
 
 .cta__text p {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   margin-top: 2rem;
-  font-family: Montserrat_Medium;
 }
 
 .cta__text div span {
@@ -312,33 +325,10 @@ body {
 .cta__btn button {
   border: 1px solid black;
   background: transparent;
-  width: 50%;
-  padding: .5rem;
 }
 
 .cta__btn button a {
   color: black;
-}
-
-@media (min-width: 576px) {
-  .cta__btn {
-    margin-top: 5rem;
-  }
-}
-
-@media (min-width: 768px) {
-  .cta {
-    margin: 5rem -3rem;
-  }
-  .cta__btn {
-    margin-top: 5rem;
-  }
-}
-
-@media (min-width: 992px) {
-  .cta {
-    margin: 5rem -10rem;
-  }
 }
 
 .menu {
@@ -418,19 +408,55 @@ body {
 
 .header__text span {
   display: block;
-  margin-bottom: 2rem;
+}
+
+.header__text span:not(:last-child) {
+  margin-bottom: 3rem;
 }
 
 .header__text span:nth-child(1) {
   font-family: Montserrat_SemiBold;
   font-size: 1.6rem;
-  font-weight: 300;
 }
 
 .header__text span:nth-child(2) {
-  font-size: 4rem;
+  font-size: 5.5rem;
   font-family: Montserrat_Bold;
   letter-spacing: .3rem;
+}
+
+@media (min-width: 768px) {
+  .header__text span:nth-child(2) {
+    font-size: 8rem;
+  }
+}
+
+.header__social {
+  position: absolute;
+  bottom: 0;
+  left: 1.4rem;
+}
+
+.header__social i {
+  font-size: 1.7rem;
+  display: block;
+  color: #666;
+  margin-top: .5rem;
+}
+
+.header__scroll {
+  position: absolute;
+  bottom: 1.5rem;
+  right: 0;
+  font-size: 1.7rem;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  cursor: pointer;
+}
+
+.header__scroll span {
+  padding-left: 1.7rem;
+  font-weight: 900;
 }
 
 .header__logo {
@@ -445,8 +471,8 @@ body {
           transform: rotate(-90deg);
   display: inline-block;
   position: absolute;
-  top: 10rem;
-  left: -1.6rem;
+  top: 8.4rem;
+  left: -1.9rem;
   font-size: 2rem;
 }
 
