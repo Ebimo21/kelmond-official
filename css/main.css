@@ -3,7 +3,8 @@
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
 }
 
 html {
@@ -11,7 +12,8 @@ html {
 }
 
 body {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 1.5rem;
   font-family: Montserrat_Regular;
 }
@@ -118,7 +120,8 @@ body {
 
 .project__pack--card img {
   position: relative;
-  transform: translate(80px, 55px) scale(1.6);
+  -webkit-transform: translate(80px, 55px) scale(1.6);
+          transform: translate(80px, 55px) scale(1.6);
 }
 
 .section {
@@ -243,7 +246,7 @@ body {
   background: black;
   margin: -1.5rem;
   color: white;
-  padding: 10rem 2rem 1rem;
+  padding: 6rem 2rem 3rem;
   font-family: Montserrat_SemiBold;
 }
 
@@ -252,8 +255,9 @@ body {
   text-align: center;
 }
 
-.footer div h2 div span {
-  margin: 0 .5rem;
+.footer .two:nth-child(2) {
+  position: relative;
+  top: 2rem;
 }
 
 @media (min-width: 768px) {
@@ -274,7 +278,8 @@ body {
   position: relative;
   top: 45%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   text-align: center;
 }
 
@@ -303,7 +308,8 @@ body {
 
 .header__logo-text {
   font-weight: 1000;
-  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
   display: inline-block;
   position: absolute;
   top: 10rem;
@@ -340,4 +346,3 @@ body {
 .header__bar {
   float: right;
 }
-/*# sourceMappingURL=main.css.map */
