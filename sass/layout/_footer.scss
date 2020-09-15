@@ -6,8 +6,23 @@
     // height: 20rem; 
     font-family: $Semi_Bold;
     
-    h2{
-        font-size: 5rem;
+    div {
+
+        h2{
+        font-size: 3rem;
+        text-align: center;
+
+        div{
+
+            span{
+                // display: inline-block;
+                margin: 0 .5rem;
+            }
+        }
+
+    }
+        
+        
     }
 }
 
