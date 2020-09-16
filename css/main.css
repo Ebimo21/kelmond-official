@@ -425,13 +425,10 @@ a {
   display: block;
 }
 
-.header__text span:not(:last-child) {
-  margin-bottom: 1.5rem;
-}
-
 .header__text span:nth-child(1) {
-  font-family: Montserrat_SemiBold;
-  font-size: 1.6rem;
+  font-family: Montserrat_xLight;
+  font-size: 1.5rem;
+  font-weight: 900;
 }
 
 .header__text span:nth-child(2) {
@@ -461,7 +458,7 @@ a {
 
 .header__scroll {
   position: absolute;
-  bottom: 1.5rem;
+  bottom: 2.3rem;
   right: 0;
   font-size: 1.7rem;
   -webkit-transform: rotate(-90deg);
@@ -489,6 +486,7 @@ a {
   top: 8.4rem;
   left: -1.9rem;
   font-size: 2rem;
+  font-family: Montserrat_Bold;
 }
 
 .header__navIcon {

@@ -20,15 +20,12 @@
 
         & span{
             display: block;
-            
-            &:not(:last-child){
-                margin-bottom: 1.5rem;
-            }
         }
 
         & span:nth-child(1){
-            font-family: Montserrat_SemiBold;
-            font-size: 1.6rem;
+            font-family: Montserrat_xLight;
+            font-size: 1.5rem;
+            font-weight: 900;
         }
     
 
@@ -60,7 +57,7 @@
 
     &__scroll{
         position: absolute;
-        bottom: 1.5rem;
+        bottom: 2.3rem;
         right:0;
         font-size: 1.7rem;
         transform: rotate(-90deg);
@@ -86,6 +83,7 @@
         top: 8.4rem;
         left: -1.9rem;
         font-size: 2rem;
+        font-family: Montserrat_Bold;
     }
 
     &__navIcon{
@@ -131,14 +129,6 @@
             transition: all .5s ease-in-out;
             
         }
-
-        .animate{
-            
-        }
-
-        //  width: 6rem;
-        // padding: .5rem;
-        // margin-top: .4rem;
 
         &--bar{
             display: block;
