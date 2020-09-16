@@ -5,7 +5,11 @@
     position: relative;
     height: 90vh;
 
-
+    & > img{
+        position: absolute;
+        right: 1rem;
+        margin-top: .5rem;
+    }
 
     &__text {
         display: block;
@@ -88,75 +92,7 @@
         font-size: 2rem;
     }
 
-    &__navIcon{
-        position: relative;
-        display: flex;
-        justify-content: center;
-        
-        a{
-            color: black;
-        }
-
-        span{
-            margin-top: 1.5rem;
-            border: .8px solid;
-            width: 1.5rem;
-            background: black;
-            position: absolute;
-            right: 10px;
-            text-align: right;
-        }
-
-        span::after{
-            content: "";
-            position: absolute;
-            width: 2rem;
-            right: 0;
-            // height: 2px;
-            background: green;
-            // margin-bottom: 5px;
-            transform: translateY(19px);
-            transition: all .5s ease-in-out;
-
-        }
-
-        span::before{
-            content: "";
-            position: absolute;
-            right:0;
-            // height: 2px;
-            background: red;
-            width: 3rem;
-            transform: translate(12px);
-            transition: all .5s ease-in-out;
-            
-        }
-
-        .animate{
-            
-        }
-
-        //  width: 6rem;
-        // padding: .5rem;
-        // margin-top: .4rem;
-
-        &--bar{
-            display: block;
-            margin: .7rem 0  .6rem;
-            border-top: .23rem solid black;
-            position: relative;
-            
-            &.middle{
-                width: 60%;
-                margin-left: 2rem;
-            }
-
-            &.bottom{
-                width: 80%;
-                margin-left: 1rem;
-            }
-        }
-    }
+    
 
     
 }

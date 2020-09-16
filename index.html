@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/font-awesome.min.css" />
     <link rel="stylesheet" href="css/main.css" />
-    
+    <script src="js/app.js" type="text/javascript"></script>
 </head>
 <body">
 
@@ -42,24 +42,12 @@
     <header class="header">
         
         <a href="index.html">
-            <img class="header__logo" src="assets/logo-official.png" width="40rem" />
+            <img id="nav"  class="header__logo" src="assets/logo-official.png" width="40rem" />
         </a>
         <span class="header__logo-text d-none d-sm-block">Kelmond</span>
 
-        <!-- <img height="20rem" class="header__bar" src="assets/projects/nav-tab.png" alt="bars" /> -->
+        <img onclick="open()" height="20rem" class="header__bar" src="assets/projects/nav-tab.png" alt="bars" />
 
-        <div class="header__navIcon">
-            <!-- <a href="#"> -->
-
-                <a href="#" onclick="open()"><span class="bars animate"></span></a>
-
-                <!-- <span class="header__navIcon--bar top"></span>
-                <span class="header__navIcon--bar middle"></span>
-                <span class="header__navIcon--bar bottom"></span> -->
-            <!-- </a> -->
-        </div>
-
-        
 
 
         <h1 class="header__text">
@@ -244,6 +232,6 @@
             </div>
         </div>
     </div>
-    <script src="js/js.js" type="text/javascript"></script>
+
 </body>
 </html>
