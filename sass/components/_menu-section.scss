@@ -1,10 +1,12 @@
 .menu{
-    position: absolute;
+    // position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     background: black;
-    height: 100%;
-    display: block;
+    height: 50%;
+    display: none;
     width:100%;
-    z-index: 4;
+    overflow: hidden;
+    z-index: 2;
 }

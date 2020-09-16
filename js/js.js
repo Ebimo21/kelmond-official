@@ -1,14 +1,6 @@
-function addEventListenerss(){
+var menu = document.getElementById('menu');
 
-   var menu= document.getElementsByClassName('menu');
-
-   menu.on('click', open());
-
+function open(){
+    // menu.style.display = 'block';
+    alert('hi');
 }
-
-}
-
-
-
-
-window.addEventListener('load', addEventListenerss);
