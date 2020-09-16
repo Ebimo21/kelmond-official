@@ -410,6 +410,12 @@ a {
   height: 90vh;
 }
 
+.header > img {
+  position: absolute;
+  right: 1rem;
+  margin-top: .5rem;
+}
+
 .header__text {
   display: block;
   font-size: 1rem;
@@ -487,71 +493,6 @@ a {
   left: -1.9rem;
   font-size: 2rem;
   font-family: Montserrat_Bold;
-}
-
-.header__navIcon {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.header__navIcon a {
-  color: black;
-}
-
-.header__navIcon span {
-  margin-top: 1.5rem;
-  border: .8px solid;
-  width: 1.5rem;
-  background: black;
-  position: absolute;
-  right: 10px;
-  text-align: right;
-}
-
-.header__navIcon span::after {
-  content: "";
-  position: absolute;
-  width: 2rem;
-  right: 0;
-  background: green;
-  -webkit-transform: translateY(19px);
-          transform: translateY(19px);
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
-}
-
-.header__navIcon span::before {
-  content: "";
-  position: absolute;
-  right: 0;
-  background: red;
-  width: 3rem;
-  -webkit-transform: translate(12px);
-          transform: translate(12px);
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
-}
-
-.header__navIcon--bar {
-  display: block;
-  margin: .7rem 0  .6rem;
-  border-top: .23rem solid black;
-  position: relative;
-}
-
-.header__navIcon--bar.middle {
-  width: 60%;
-  margin-left: 2rem;
-}
-
-.header__navIcon--bar.bottom {
-  width: 80%;
-  margin-left: 1rem;
 }
 
 .menu {
