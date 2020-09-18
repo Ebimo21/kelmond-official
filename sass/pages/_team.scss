@@ -1,13 +1,19 @@
 
 .team{
-    padding: 2.5rem;
+    // padding: 2.5rem;
+    margin: 2rem;
+
     >h2{
         font-size: 3rem;
         font-family: $Bold;
+        padding-left: 0;
+        padding-right: 0;
     }
 
     p{
         font-size: 1.4rem;
+        padding-left: 0;
+        padding-right: 0;
     }
     div{
         // height: 55rem;
@@ -34,25 +40,44 @@
 .section__expertise{
     margin: 2rem;
     h2{
+        padding-left: 0;
+        padding-right: 0;
         font-size: 3rem;
         font-family: $Bold;
     }
 
     p{
         font-size: 1.4rem;
+        padding-left: 0;
+        padding-right: 0;
 
+    }
+
+    section{
+        font-size: 1.4rem;
+
+        ul{
+            margin-left: 2rem;
+            font-weight: 600;
+        }
     }
 }
 
 .section__clients{
     margin: 2rem;
+    // height: 10vh;
+    // align-content: space-around;
     h2{
         font-size: 3rem;
         font-family: $Bold;
+        padding-left: 0;
+        padding-right: 0;
     }
 
     p{
         font-size: 1.4rem;
+        padding-left: 0;
+        padding-right: 0;
 
     }
 
@@ -60,4 +85,65 @@
         font-size: initial;
         font-family: $Medium;
     }
+
+    &--card{
+        height: 70rem;
+        padding: 1rem 0;
+        align-content: space-around;
+
+        img{
+            margin-top: 1rem;
+        }
+    }
+}
+
+@media (min-width: 576px){
+    .team{
+        > h2{
+            font-size: 5rem;
+        }
+
+        p{
+            font-size: 2rem;
+        }
+    }
+
+    .section__expertise{
+
+        h2{
+            font-size: 5rem;
+        }
+        
+        ul{
+            font-size: 2rem;
+            font-weight: 800;
+        }
+
+        p{
+            font-size: 2rem;
+        }
+    }
+
+    .section__clients{
+       height: initial;
+        h2{
+            font-size: 5rem;
+        }
+
+        p{
+            font-size: 2rem;
+        }
+
+        &--card{
+            height: 30rem;
+            padding: 1rem 0;
+            align-content: space-around;
+    
+            img{
+                margin-top: 1rem;
+            }
+        }
+    }
+    
+    
 }

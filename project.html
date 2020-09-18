@@ -3,41 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kelmond</title>
+    <title>Project | Kelmond Media Company</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+    
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/font-awesome.min.css" />
     <link rel="stylesheet" href="css/main.css" />
     
 </head>
 <body>
+    <div  id="menu" class="menu" >
+        <a href="index.html"><img src="assets/logo-official-white.png" width="40rem"/></a>
 
-    <div class="menu d-none ">
-
-        <img src="assets/logo-official-white.png" width="40rem"/>
-
-        <a href="#"><i class="fa fa-close"></i></a>
+        <a id="close-ico" href="#" onclick="open_menu()"><i class="fa fa-close"></i></a>
 
         <div class="row justify-content-center">
-            <div class="col-6 col-sm-4  col-md-3">
+            <div id="link" class="col-6 col-sm-4  col-md-3 links">
                 <a href="project.html">Projects</a>
                 <a href="team.html">Team</a>
                 <a>Insight</a>
-                <a>Giftr</a>
+                <a>Gifter</a>
             </div>
 
-            <div class="col-5 col-sm-4 col-md-3">
-                <p>Facebook</p>
-                <p>Instagram</p>
-                <p>Twitter</p>
-                <p>Behance</p>
-                <p>Dribble</p>
-                <p>Call</p>
+            <div id="social" class="col-5 col-sm-4 col-md-3">
+                <a href="https://web.facebook.com/Kelmondmediacompany">facebook</a>
+                <a href="https://www.instagram.com/kelmondmediacompany/">instagram</a>
+                <a href="https://web.facebook.com/Kelmondmediacompany">twitter</a>
+                <a href="https://www.behance.net/Kelmondmediacompany">behance</a>
+                <a href="https://web.facebook.com/Kelmondmediacompany">dribble</a>
+                <a href="https://web.facebook.com/Kelmondmediacompany">call</a>
             </div>
         </div>
 
 
     </div>
-
 
     <header class="header">
         <a href="index.html">
@@ -45,21 +44,11 @@
         </a>
         <span class="header__logo-text d-none d-sm-block">Kelmond</span>
 
-        <!-- <img height="20rem" class="header__bar" src="assets/projects/nav-tab.png" alt="bars" /> -->
+        <div class="header__navIcon" onclick="open_menu()">
 
-        <div class="header__navIcon">
-            <!-- <a href="#"> -->
+            <a href="#"><img src="assets/nav-tab.png" width="30rem" /></a>
 
-                <span class="bars animate"></span>
-
-                <!-- <span class="header__navIcon--bar top"></span>
-                <span class="header__navIcon--bar middle"></span>
-                <span class="header__navIcon--bar bottom"></span> -->
-            <!-- </a> -->
-        </div>
-
-        
-
+    </div>
 
         <h1 class="header__text">
             <span>Kelmond Media Company</span>
@@ -67,9 +56,9 @@
         </h1>
 
         <div class="header__social d-none d-sm-block">
-            <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
-            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-            <a href="#"></a><i class="fa fa-behance-square" aria-hidden="true"></i></a>
+            <a href="https://web.facebook.com/Kelmondmediacompany/?_rdc=1&_rdr"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/kelmondmediacompany/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href="https://www.behance.net/Kelmondmediacompany"></a><i class="fa fa-behance-square" aria-hidden="true"></i></a>
         </div>
 
         <div class="header__scroll d-none d-sm-block">
@@ -98,7 +87,7 @@
                     <p>Kelmond Media Company is <br /> design and development</p>
                 </div>
 
-                <img src="assets/projects/quick-meal.png" height="210rem" alt="HCR Foundation" />
+                <img src="assets/projects/quick-meal.png" height="210rem" alt="quick-meal-planner" />
             
                </div>
             </div>
@@ -110,7 +99,7 @@
                      <p>Kelmond Media Company is <br /> design and development</p>
                  </div>
                  
-                 <img src="assets/projects/elfedi-rich.png" height="150rem" alt="HCR Foundation">
+                 <img src="assets/projects/elfedi-rich.png" height="150rem" alt="Elfedi-rich">
              
                 </div>
              </div>
@@ -122,7 +111,7 @@
                      <p>Kelmond Media Company is <br /> design and development</p>
                  </div>
                  
-                 <img src="assets/projects/carrot-cheese.png" height="180rem" alt="HCR Foundation" />
+                 <img src="assets/projects/carrot-cheese.png" height="180rem" alt="carrot-cheese" />
              
                 </div>
              </div>
@@ -134,7 +123,7 @@
                      <p>Kelmond Media Company is <br /> design and development</p>
                  </div>
                  
-                 <img src="assets/projects/handwash-tank.png" height="170rem" alt="HCR Foundation" />
+                 <img src="assets/projects/handwash-tank.png" height="170rem" alt="handwash-tank" />
 
              
                 </div>
@@ -148,7 +137,7 @@
                      <p>Kelmond Media Company is <br /> design and development</p>
                  </div>
                  
-                 <img src="assets/projects/itobo-enterprise.png" height="130rem" alt="HCR Foundation" />
+                 <img src="assets/projects/itobo-enterprise.png" height="130rem" alt="itobo-enterprise" />
              
                 </div>
              </div>
@@ -159,63 +148,22 @@
 
     <section class="section row">
         <h2 class="col-12">We Design <br/> For Love</h2>
-        <p class="col-xl-6"> In a time where consumers require more than a great product or service to patronise a business, DODO leverages the potency of the design process to bring about uncommon solutions that consumers resonate with, the kind o solutions that provide signiﬁcant value for todays companies.
+        <p class="col-xl-8"> In a time where consumers require more than a great product or service to patronise a business, DODO leverages the potency of the design process to bring about uncommon solutions that consumers resonate with, the kind o solutions that provide signiﬁcant value for todays companies.
         </p>
     </section>
 
-    <section class="review row justify-content-around">
-        
-        <h2 class="col-12">Customer's Reviews</h2>
-
-        <div class="review__comment col-12 col-sm-5 row">
-            <img src="assets/projects/user_review1.png" width="80rem" alt="user_image" />
-            <p >Kendra Pama
-                <span class="d-block col-12">@Kendy</span>
-            <i class="fa fa-star checked"></i>
-            <i class="fa fa-star checked"></i>
-            <i class="fa fa-star checked"></i>
-            <i class="fa fa-star checked"></i>
-            <i class="fa fa-star "></i>
-        </p>
-
-        <p>
-            Kelmond Media Company is a unique digital design and development company with a highly creative team of professionals, we are based in Bayelsa State, Nigeria.
-
-        </p>
-            
-        </div>
-
-        <div class="review__comment col-12 col-sm-5 row">
-            <img src="assets/projects/user_review2.png" width="80rem" alt="user_image" />
-            <p >Kendra Pama
-                <span class="d-block col-12">@Kendy</span>
-            <i class="fa fa-star checked"></i>
-            <i class="fa fa-star checked"></i>
-            <i class="fa fa-star checked"></i>
-            <i class="fa fa-star checked"></i>
-            <i class="fa fa-star "></i>
-        </p>
-
-        <p>
-            Kelmond Media Company is a unique digital design and development company with a highly creative team of professionals, we are based in Bayelsa State, Nigeria.
-
-        </p>
-            
-        </div>
-
-        
-    </section>
+   
 
     <div class="row cta justify-content-between align-items-center">
-        <div class="cta__text col-12 col-sm-8 col-md-6">
-            <h2>Got a Project?</h2>
+        <div class="cta__text col-12 col-sm-8 col-md-8">
+            <h2 class="text-center text-sm-left">Got a Project?</h2>
             <p>In a time where consumers require more than a great
                  product or service to patronise a business, DODO leverages
                   the potency of the design process to bring </p>
 
         </div>
 
-        <div class="cta__btn col-12 col-sm-3 col-md-5">
+        <div class="cta__btn col-12 col-sm-3 col-md-3">
             <button class=" btn btn-primarys"><a href="#">Let's talk</a></button>
         </div>
     </div>
@@ -233,17 +181,18 @@
         </div>
 
         <div class="row two justify-content-center justify-content-sm-between">
-            <p class="">&copy 2020 <span>Kelmond Media Company</span></p>
+            <p class="">&copy; 2020 <span>Kelmond Media Company</span></p>
             
             <div class="d-none d-sm-block">
                 <p><a href="#">Privacy Policy</a>
-                    <i>&#8226</i>
+                    <i>&#8226;</i>
                     <a href="#">Cookie Policy</a>
-                    <i>&#8226</i>
+                    <i>&#8226;</i>
                     <span>Terms and condition</span>
                     </p>
             </div>
         </div>
     </div>
+    <script src="js/app.js" type="text/javascript"></script>
 </body>
 </html>

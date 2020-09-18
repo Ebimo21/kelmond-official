@@ -112,7 +112,7 @@
     }
 
     p{
-        font-size: 1.3rem;
+        font-size: 1.4rem;
     }
 }
 
@@ -162,6 +162,23 @@
 
 
 @media (min-width: 576px){
+
+    .section{
+
+        padding: 2.4rem;
+    
+        h2{
+            font-family: $Bold;
+            font-size: 5rem;
+        }
+    
+        p{
+            font-size: 1.7rem;
+        }
+    }
+
+    
+
     .project{
 
         height: 155rem;
@@ -197,7 +214,7 @@
 
     &__text{
 
-        padding: 2rem;
+        // padding: 2rem;
         
         h2{
             font-family: $Bold;
@@ -221,12 +238,13 @@
     &__btn{
         text-align: center;
         // width: 40%;
+        // padding: 1rem;
 
         button{
             border: 1px solid black;
             background: transparent;
-            width: 50%;
-            padding: .5rem;
+            width: 55%;
+            padding: .8rem .6rem;
 
             a{
                 color: black;
@@ -239,6 +257,30 @@
 @media (min-width: 576px){
     .cta{
 
+        &__text{
+
+            // padding: 2rem;
+            
+            h2{
+                font-family: $Bold;
+                text-align: center;
+                font-size: 3.2rem;
+            }
+    
+            p{
+                font-size: 1.7rem;
+                margin-top: 2rem;
+                font-family: $Medium;
+            }
+    
+            div span{
+    
+                text-align: center;
+            }
+    
+        }
+        // padding: 3rem 3rem 3rem 10rem;
+
         &__btn{
             margin-top: 5rem;    
         }
@@ -247,12 +289,39 @@
 
 @media (min-width: 768px){
     .cta{
-        margin: 5rem -3rem;
+        padding: 3rem 3rem 3rem 10rem;
+
+        margin: 5rem -10rem;
 
         &__btn{
             margin-top: 5rem;
             
         }
+
+        &__text{
+
+            padding: 2rem;
+            
+            h2{
+                font-family: $Bold;
+                text-align: center;
+                font-size: 5rem;
+            }
+    
+            p{
+                font-size: 1.7rem;
+                margin-top: 2rem;
+                font-family: $Medium;
+            }
+    
+            div span{
+    
+                text-align: center;
+            }
+    
+        }
+
+        
     }
 }
 

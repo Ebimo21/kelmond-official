@@ -4,87 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kelmond Media Company</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
 
-    <!-- ####################### change to bootstrap.min.css ############## -->
     <link rel="stylesheet" href="css/bootstrap.css" />
-    <!-- ############################# font awesome icon ########## -->
     <link rel="stylesheet" href="css/font-awesome.min.css" />
-    <!-- ############################## main style sheet ##########-->
     <link rel="stylesheet" href="css/main.css" />
 
 </head>
 <body>
     <div  id="menu" class="menu" >
-        <img src="assets/logo-official-white.png" width="40rem"/>
+        <a href="index.html"><img src="assets/logo-official-white.png" width="40rem"/></a>
 
-        <a href="#" onclick="open_menu()"><i class="fa fa-close"></i></a>
+        <a id="close-ico"href="#" onclick="open_menu()"><i class="fa fa-close"></i></a>
 
-        <div class="row justify-content-center">
-            <div class="col-6 col-sm-4  col-md-3">
+        <div class="row justify-content-center ">
+            <div id="link" class="col-6 col-sm-4  col-md-3 links">
                 <a href="project.html">Projects</a>
                 <a href="team.html">Team</a>
                 <a>Insight</a>
                 <a>Gifter</a>
             </div>
 
-            <div class="col-5 col-sm-4 col-md-3">
-                <p>Facebook</p>
-                <p>Instagram</p>
-                <p>Twitter</p>
-                <p>Behance</p>
-                <p>Dribble</p>
-                <p>Call</p>
+            <div id="social" class="col-5 col-sm-4 col-md-3">
+                <a href="https://web.facebook.com/Kelmondmediacompany">facebook</a>
+                <a href="https://www.instagram.com/kelmondmediacompany/">instagram</a>
+                <a href="https://web.facebook.com/Kelmondmediacompany">twitter</a>
+                <a href="https://www.behance.net/Kelmondmediacompany">behance</a>
+                <a href="https://web.facebook.com/Kelmondmediacompany">dribble</a>
+                <a href="https://web.facebook.com/Kelmondmediacompany">call</a>
             </div>
         </div>
 
 
     </div>
-<!-- **************************** header ************************** -->
+
     <header class="header">
-        <!-- ################### company logo ################ -->
+
         <a href="index.html">
             <img class="header__logo" src="assets/logo-official.png" width="40rem" />
         </a>
 
         <span class="header__logo-text d-none d-sm-block">Kelmond</span>
-        <!-- #################### company logo ################ -->
 
-        <!-- ##################### nav icon ################# -->
         <div class="header__navIcon" onclick="open_menu()">
 
                 <a href="#"><img src="assets/nav-tab.png" width="30rem" /></a>
 
         </div>
-        <!-- ##################### nav icon ################# -->
-        
 
-        <!-- ##################### header text ############### -->
         <h1 class="header__text">
             <span>Kelmond Media Company</span>
             <span>We make <br> digital products</span>
         </h1>
-        <!--#################### header text #################-->
 
-        <!-- ################### header social -->
         <div class="header__social d-none d-sm-block">
-            <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
-            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-            <a href="#"></a><i class="fa fa-behance-square" aria-hidden="true"></i></a>
+            <a href="https://web.facebook.com/Kelmondmediacompany/?_rdc=1&_rdr"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/kelmondmediacompany/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href="https://www.behance.net/Kelmondmediacompany"></a><i class="fa fa-behance-square" aria-hidden="true"></i></a>
         </div>
-        <!-- ################# header social ################# -->
 
-        <!-- ######################## header auto scroll ############## -->
         <div class="header__scroll d-none d-sm-block">
             <i class="fa fa-long-arrow-left" aria-hidden="true"></i>
             <span>Scroll</span>
         </div>
     </header>
 
-<!-- ***************************** header ******************************* -->
-
-
-    <section class="section-project">
-        
+    <div>
         <div class="project row justify-content-around align-content-around">
             <div id="card1" class="project__pack col-11 col-sm-5 col-md-4 col-xl-3">
                 <div   class="project__pack--card">
@@ -104,7 +89,7 @@
                     <p>Kelmond Media Company is <br /> design and development</p>
                 </div>
 
-                <img src="assets/projects/quick-meal.png" height="210rem" alt="HCR Foundation" />
+                <img src="assets/projects/quick-meal.png" height="210rem" alt="quick-meal-planner" />
             
                </div>
             </div>
@@ -116,7 +101,7 @@
                      <p>Kelmond Media Company is <br /> design and development</p>
                  </div>
                  
-                 <img src="assets/projects/elfedi-rich.png" height="150rem" alt="HCR Foundation">
+                 <img src="assets/projects/elfedi-rich.png" height="150rem" alt="Elfedi-rich">
              
                 </div>
              </div>
@@ -128,7 +113,7 @@
                      <p>Kelmond Media Company is <br /> design and development</p>
                  </div>
                  
-                 <img src="assets/projects/carrot-cheese.png" height="180rem" alt="HCR Foundation" />
+                 <img src="assets/projects/carrot-cheese.png" height="180rem" alt="carrot-cheese" />
              
                 </div>
              </div>
@@ -140,9 +125,7 @@
                      <p>Kelmond Media Company is <br /> design and development</p>
                  </div>
                  
-                 <img src="assets/projects/handwash-tank.png" height="170rem" alt="HCR Foundation" />
-
-             
+                 <img src="assets/projects/handwash-tank.png" height="170rem" alt="handwash-tank" />             
                 </div>
              </div>
 
@@ -154,16 +137,16 @@
                      <p>Kelmond Media Company is <br /> design and development</p>
                  </div>
                  
-                 <img src="assets/projects/itobo-enterprise.png" height="130rem" alt="HCR Foundation" />
+                 <img src="assets/projects/itobo-enterprise.png" height="130rem" alt="itobo-enterprise" />
              
                 </div>
              </div>
         </div>
-    </section>
+    </div>
 
     <section class="section row">
         <h2 class="col-12">We Design <br/> For Love</h2>
-        <p class="col-xl-6"> In a time where consumers require more than a great product or service to patronise a business, DODO leverages the potency of the design process to bring about uncommon solutions that consumers resonate with, the kind o solutions that provide signiﬁcant value for todays companies.
+        <p class="col-xl-8"> In a time where consumers require more than a great product or service to patronise a business, DODO leverages the potency of the design process to bring about uncommon solutions that consumers resonate with, the kind o solutions that provide signiﬁcant value for todays companies.
         </p>
     </section>
 
@@ -181,7 +164,7 @@
             <i class="fa fa-star checked"></i>
             <i class="fa fa-star "></i>
         </p>
-
+<!--  -->
         <p>
             Kelmond Media Company is a unique digital design and development company with a highly creative team of professionals, we are based in Bayelsa State, Nigeria.
 

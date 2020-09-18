@@ -92,6 +92,10 @@ a {
   color: white;
 }
 
+a:hover {
+  text-decoration: none;
+}
+
 @media (min-width: 768px) {
   body {
     padding: 3rem;
@@ -214,7 +218,7 @@ a {
 }
 
 .section p {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
 }
 
 .review {
@@ -260,6 +264,16 @@ a {
 }
 
 @media (min-width: 576px) {
+  .section {
+    padding: 2.4rem;
+  }
+  .section h2 {
+    font-family: Montserrat_Bold;
+    font-size: 5rem;
+  }
+  .section p {
+    font-size: 1.7rem;
+  }
   .project {
     height: 155rem;
   }
@@ -289,10 +303,6 @@ a {
   background: #f7f6f6;
 }
 
-.cta__text {
-  padding: 2rem;
-}
-
 .cta__text h2 {
   font-family: Montserrat_Bold;
   text-align: center;
@@ -316,8 +326,8 @@ a {
 .cta__btn button {
   border: 1px solid black;
   background: transparent;
-  width: 50%;
-  padding: .5rem;
+  width: 55%;
+  padding: .8rem .6rem;
 }
 
 .cta__btn button a {
@@ -325,6 +335,19 @@ a {
 }
 
 @media (min-width: 576px) {
+  .cta__text h2 {
+    font-family: Montserrat_Bold;
+    text-align: center;
+    font-size: 3.2rem;
+  }
+  .cta__text p {
+    font-size: 1.7rem;
+    margin-top: 2rem;
+    font-family: Montserrat_Medium;
+  }
+  .cta__text div span {
+    text-align: center;
+  }
   .cta__btn {
     margin-top: 5rem;
   }
@@ -332,10 +355,27 @@ a {
 
 @media (min-width: 768px) {
   .cta {
-    margin: 5rem -3rem;
+    padding: 3rem 3rem 3rem 10rem;
+    margin: 5rem -10rem;
   }
   .cta__btn {
     margin-top: 5rem;
+  }
+  .cta__text {
+    padding: 2rem;
+  }
+  .cta__text h2 {
+    font-family: Montserrat_Bold;
+    text-align: center;
+    font-size: 5rem;
+  }
+  .cta__text p {
+    font-size: 1.7rem;
+    margin-top: 2rem;
+    font-family: Montserrat_Medium;
+  }
+  .cta__text div span {
+    text-align: center;
   }
 }
 
@@ -383,6 +423,7 @@ a {
   .footer {
     margin: -5rem -3rem;
     padding: -5rem;
+    padding: 12rem 2rem 3rem;
   }
 }
 
@@ -441,6 +482,11 @@ a {
   .header__text span:nth-child(2) {
     font-size: 8rem;
   }
+}
+
+.header__text p {
+  font-size: 1.5vw;
+  margin-top: 4rem;
 }
 
 .header__social {
@@ -503,13 +549,13 @@ div#menu {
   transition: all .5s;
 }
 
-div#menu img {
+div#menu a img {
   position: absolute;
   left: 4rem;
   top: 4rem;
 }
 
-div#menu > a {
+div#menu #close-ico {
   font-size: 4rem;
   position: absolute;
   right: 4rem;
@@ -524,10 +570,16 @@ div#menu div {
   margin-left: 1rem;
 }
 
-div#menu div a {
+div#menu div #link a {
   font-family: Montserrat_Bold;
   font-size: 3rem;
   padding: 1rem;
+  display: block;
+}
+
+div#menu div #social a {
+  font-size: 1.8rem;
+  margin-top: 1rem;
   display: block;
 }
 
@@ -541,16 +593,20 @@ div#menu div:nth-child(2) {
 }
 
 .team {
-  padding: 2.5rem;
+  margin: 2rem;
 }
 
 .team > h2 {
   font-size: 3rem;
   font-family: Montserrat_Bold;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .team p {
   font-size: 1.4rem;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .team div {
@@ -576,12 +632,25 @@ div#menu div:nth-child(2) {
 }
 
 .section__expertise h2 {
+  padding-left: 0;
+  padding-right: 0;
   font-size: 3rem;
   font-family: Montserrat_Bold;
 }
 
 .section__expertise p {
   font-size: 1.4rem;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.section__expertise section {
+  font-size: 1.4rem;
+}
+
+.section__expertise section ul {
+  margin-left: 2rem;
+  font-weight: 600;
 }
 
 .section__clients {
@@ -591,13 +660,65 @@ div#menu div:nth-child(2) {
 .section__clients h2 {
   font-size: 3rem;
   font-family: Montserrat_Bold;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .section__clients p {
   font-size: 1.4rem;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .section__clients span {
   font-size: initial;
   font-family: Montserrat_Medium;
+}
+
+.section__clients--card {
+  height: 70rem;
+  padding: 1rem 0;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+}
+
+.section__clients--card img {
+  margin-top: 1rem;
+}
+
+@media (min-width: 576px) {
+  .team > h2 {
+    font-size: 5rem;
+  }
+  .team p {
+    font-size: 2rem;
+  }
+  .section__expertise h2 {
+    font-size: 5rem;
+  }
+  .section__expertise ul {
+    font-size: 2rem;
+    font-weight: 800;
+  }
+  .section__expertise p {
+    font-size: 2rem;
+  }
+  .section__clients {
+    height: initial;
+  }
+  .section__clients h2 {
+    font-size: 5rem;
+  }
+  .section__clients p {
+    font-size: 2rem;
+  }
+  .section__clients--card {
+    height: 30rem;
+    padding: 1rem 0;
+    -ms-flex-line-pack: distribute;
+        align-content: space-around;
+  }
+  .section__clients--card img {
+    margin-top: 1rem;
+  }
 }

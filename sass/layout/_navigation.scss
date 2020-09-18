@@ -11,13 +11,13 @@ div#menu{
     transition: all .5s;
     // display: none;
 
-    img{
+    a img{
         position: absolute;
         left: 4rem;
         top: 4rem;
     }
 
-     > a{
+      #close-ico{
         font-size: 4rem;
         position: absolute;
         right: 4rem;
@@ -31,12 +31,19 @@ div#menu{
         margin-left: 1rem;
         
         
-        a{
+        #link a{
             font-family: $Bold;
             font-size: 3rem;
             padding: 1rem;
             display: block;
             
+            
+        }
+
+        #social a{
+            font-size: 1.8rem;
+            margin-top: 1rem;
+            display: block;
         }
         
         p{
