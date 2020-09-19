@@ -1,3 +1,22 @@
+.slideup {
+  -webkit-animation-name: slideup;
+          animation-name: slideup;
+  -webkit-animation-duration: .7s;
+          animation-duration: .7s;
+}
+
+.slidedown {
+  -webkit-animation: 2s slidedown;
+          animation: 2s slidedown;
+}
+
+.animate-projects {
+  -webkit-animation: 1s animate-projects;
+          animation: 1s animate-projects;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
 @-webkit-keyframes slide-out {
   0% {
     opacity: 1;
@@ -68,6 +87,113 @@
   }
 }
 
+@-webkit-keyframes slideup {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(50rem);
+            transform: translateY(50rem);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(13rem);
+            transform: translateY(13rem);
+  }
+}
+
+@keyframes slideup {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(50rem);
+            transform: translateY(50rem);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(13rem);
+            transform: translateY(13rem);
+  }
+}
+
+@-webkit-keyframes slidedown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-50rem);
+            transform: translateY(-50rem);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(13rem);
+            transform: translateY(13rem);
+  }
+}
+
+@keyframes slidedown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-50rem);
+            transform: translateY(-50rem);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(13rem);
+            transform: translateY(13rem);
+  }
+}
+
+@-webkit-keyframes animate-projects {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(10rem);
+            transform: translateY(10rem);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(1);
+            transform: translateY(1);
+  }
+}
+
+@keyframes animate-projects {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(10rem);
+            transform: translateY(10rem);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(1);
+            transform: translateY(1);
+  }
+}
+
+.project img {
+  -webkit-animation: 1s floating infinite;
+          animation: 1s floating infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+@-webkit-keyframes floating {
+  0% {
+    -webkit-transform: rotateY(0deg) translate(80px, 55px) scale(1.58);
+            transform: rotateY(0deg) translate(80px, 55px) scale(1.58);
+  }
+  100% {
+    -webkit-transform: rotateY(13deg) translate(80px, 55px) scale(1.6);
+            transform: rotateY(13deg) translate(80px, 55px) scale(1.6);
+  }
+}
+
+@keyframes floating {
+  0% {
+    -webkit-transform: rotateY(0deg) translate(80px, 55px) scale(1.58);
+            transform: rotateY(0deg) translate(80px, 55px) scale(1.58);
+  }
+  100% {
+    -webkit-transform: rotateY(13deg) translate(80px, 55px) scale(1.6);
+            transform: rotateY(13deg) translate(80px, 55px) scale(1.6);
+  }
+}
+
 *,
 *::after,
 *::before {
@@ -85,7 +211,7 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 5rem 1.5rem 0;
-  font-family: Montserrat_Regular;
+  font-family: "Montserrat" !important;
 }
 
 a {
@@ -108,31 +234,6 @@ a:hover {
   }
 }
 
-@font-face {
-  font-family: Montserrat_xLight;
-  src: url("../fonts/Montserrat/Montserrat-ExtraLight.ttf");
-}
-
-@font-face {
-  font-family: Montserrat_Regular;
-  src: url("../fonts/Montserrat/Montserrat-Regular.ttf");
-}
-
-@font-face {
-  font-family: Montserrat_Bold;
-  src: url("../fonts/Montserrat/Montserrat-ExtraBold.ttf");
-}
-
-@font-face {
-  font-family: Montserrat_SemiBold;
-  src: url("../fonts/Montserrat/Montserrat-SemiBold.ttf");
-}
-
-@font-face {
-  font-family: Montserrat_Medium;
-  src: url("../fonts/Montserrat/Montserrat-Medium.ttf");
-}
-
 .project {
   color: white;
   text-align: left;
@@ -142,6 +243,7 @@ a:hover {
 }
 
 .project__pack {
+  opacity: 0;
   height: 40rem;
   background: red;
   border-radius: 2rem;
@@ -190,12 +292,12 @@ a:hover {
 
 .project__pack--card h2 {
   font-size: 3rem;
-  font-family: Montserrat_Bold;
+  font-weight: 700;
 }
 
 .project__pack--card p {
   font-size: 1.2rem;
-  font-family: Montserrat_Medium;
+  font-weight: 500;
 }
 
 .project__pack--card div {
@@ -213,7 +315,7 @@ a:hover {
 }
 
 .section h2 {
-  font-family: Montserrat_Bold;
+  font-weight: 700;
   font-size: 3rem;
 }
 
@@ -227,7 +329,7 @@ a:hover {
 }
 
 .review h2 {
-  font-family: Montserrat_Bold;
+  font-weight: 700;
   font-size: 2.2rem;
   text-align: center;
 }
@@ -242,13 +344,13 @@ a:hover {
 }
 
 .review__comment p {
-  font-family: Montserrat_Bold;
+  font-weight: 700;
   margin-top: 1.5rem;
 }
 
 .review__comment p span {
   padding: 0;
-  font-family: Montserrat_Medium;
+  font-weight: 500;
 }
 
 .review__comment .fa {
@@ -256,7 +358,7 @@ a:hover {
 }
 
 .review__comment p:last-child {
-  font-family: inherit;
+  font-weight: inherit;
 }
 
 .review__comment .checked {
@@ -268,7 +370,7 @@ a:hover {
     padding: 2.4rem;
   }
   .section h2 {
-    font-family: Montserrat_Bold;
+    font-weight: 700;
     font-size: 5rem;
   }
   .section p {
@@ -304,7 +406,7 @@ a:hover {
 }
 
 .cta__text h2 {
-  font-family: Montserrat_Bold;
+  font-weight: 700;
   text-align: center;
   font-size: 3.2rem;
 }
@@ -312,7 +414,7 @@ a:hover {
 .cta__text p {
   font-size: 1.4rem;
   margin-top: 2rem;
-  font-family: Montserrat_Medium;
+  font-weight: 500;
 }
 
 .cta__text div span {
@@ -336,14 +438,14 @@ a:hover {
 
 @media (min-width: 576px) {
   .cta__text h2 {
-    font-family: Montserrat_Bold;
+    font-weight: 700;
     text-align: center;
     font-size: 3.2rem;
   }
   .cta__text p {
     font-size: 1.7rem;
     margin-top: 2rem;
-    font-family: Montserrat_Medium;
+    font-weight: 500;
   }
   .cta__text div span {
     text-align: center;
@@ -365,14 +467,14 @@ a:hover {
     padding: 2rem;
   }
   .cta__text h2 {
-    font-family: Montserrat_Bold;
+    font-weight: 700;
     text-align: center;
     font-size: 5rem;
   }
   .cta__text p {
     font-size: 1.7rem;
     margin-top: 2rem;
-    font-family: Montserrat_Medium;
+    font-weight: 500;
   }
   .cta__text div span {
     text-align: center;
@@ -390,7 +492,7 @@ a:hover {
   margin: -1.5rem;
   color: white;
   padding: 6rem 2rem 3rem;
-  font-family: Montserrat_SemiBold;
+  font-weight: 600;
 }
 
 .footer div {
@@ -467,14 +569,13 @@ a:hover {
 }
 
 .header__text span:nth-child(1) {
-  font-family: Montserrat_xLight;
   font-size: 1.5rem;
-  font-weight: 900;
+  font-weight: 700;
 }
 
 .header__text span:nth-child(2) {
   font-size: 5.5rem;
-  font-family: Montserrat_Bold;
+  font-weight: 700;
   letter-spacing: .3rem;
 }
 
@@ -514,7 +615,7 @@ a:hover {
 
 .header__scroll span {
   padding-left: 1.7rem;
-  font-weight: 900;
+  font-weight: 800;
 }
 
 .header__logo {
@@ -524,7 +625,7 @@ a:hover {
 }
 
 .header__logo-text {
-  font-weight: 1000;
+  font-weight: 800;
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
   display: inline-block;
@@ -532,7 +633,6 @@ a:hover {
   top: 8.4rem;
   left: -1.9rem;
   font-size: 2rem;
-  font-family: Montserrat_Bold;
 }
 
 div#menu {
@@ -571,7 +671,7 @@ div#menu div {
 }
 
 div#menu div #link a {
-  font-family: Montserrat_Bold;
+  font-weight: 700;
   font-size: 3rem;
   padding: 1rem;
   display: block;
@@ -598,7 +698,7 @@ div#menu div:nth-child(2) {
 
 .team > h2 {
   font-size: 3rem;
-  font-family: Montserrat_Bold;
+  font-weight: 700;
   padding-left: 0;
   padding-right: 0;
 }
@@ -635,7 +735,7 @@ div#menu div:nth-child(2) {
   padding-left: 0;
   padding-right: 0;
   font-size: 3rem;
-  font-family: Montserrat_Bold;
+  font-weight: 700;
 }
 
 .section__expertise p {
@@ -659,7 +759,7 @@ div#menu div:nth-child(2) {
 
 .section__clients h2 {
   font-size: 3rem;
-  font-family: Montserrat_Bold;
+  font-weight: 700;
   padding-left: 0;
   padding-right: 0;
 }
@@ -672,7 +772,7 @@ div#menu div:nth-child(2) {
 
 .section__clients span {
   font-size: initial;
-  font-family: Montserrat_Medium;
+  font-weight: 500;
 }
 
 .section__clients--card {

@@ -1,3 +1,17 @@
+.slideup{
+    animation-name: slideup;
+    animation-duration: .7s;
+    // animation-iteration-count: 3;
+}
+
+.slidedown{
+    animation: 2s slidedown; 
+}
+.animate-projects{
+    animation: 1s animate-projects;
+    animation-fill-mode: forwards;
+}
+
 @keyframes slide-out{
     0%{
         opacity: 1;
@@ -28,5 +42,61 @@
     100%{
         transform: translate(-10rem);
         opacity: 1;
+    }
+}
+
+
+@keyframes slideup{
+    0%{
+        opacity: 0;
+        transform: translateY(50rem);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(13rem);
+    }
+}
+
+@keyframes slidedown{
+    0%{
+        opacity: 0;
+        transform: translateY(-50rem);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(13rem);
+    }
+}
+
+@keyframes animate-projects{
+
+    0%{
+        opacity: 0;
+        transform: translateY(10rem);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(1);
+    }
+}
+
+.project img{
+    animation: 1s floating infinite;
+    animation-direction: alternate;
+}
+
+@keyframes floating{
+    0%{
+        // opacity: 0;
+        transform: rotateY(0deg) translate(80px, 55px) scale(1.58);
+
+    }
+
+    100%{
+        // opacity: 1;
+        transform: rotateY(13deg) translate(80px, 55px) scale(1.6);
     }
 }

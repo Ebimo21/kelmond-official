@@ -8,6 +8,7 @@
     height: 300rem;
 
     &__pack{ 
+        opacity: 0;
 
         height: 40rem;
         // padding: 1rem;
@@ -79,13 +80,13 @@
             & h2{
                 // margin-left: 3rem;
                 font-size: 3rem;
-                font-family: $Bold;
+                font-weight: $Bold;
             }
 
             & p{
 
                 font-size: 1.2rem;
-                font-family: $Medium;
+                font-weight: $Medium;
             }
 
             div{
@@ -107,7 +108,7 @@
     padding: 2.4rem;
 
     h2{
-        font-family: $Bold;
+        font-weight: $Bold;
         font-size: 3rem;
     }
 
@@ -123,7 +124,7 @@
     margin: 0;
 
     h2{
-        font-family: $Bold;
+        font-weight: $Bold;
         font-size: 2.2rem;
         text-align: center;
     }
@@ -137,11 +138,11 @@
         font-size: 1.1rem;
 
         p{
-            font-family: $Bold;
+            font-weight: $Bold;
             margin-top: 1.5rem;
             span{
                 padding:0;
-                font-family: $Medium;            }
+                font-weight: $Medium;            }
         }
 
         .fa{
@@ -151,7 +152,7 @@
         }
 
         p:last-child {
-            font-family: inherit;
+            font-weight: inherit;
         }
 
         .checked{
@@ -168,7 +169,7 @@
         padding: 2.4rem;
     
         h2{
-            font-family: $Bold;
+            font-weight: $Bold;
             font-size: 5rem;
         }
     
@@ -217,7 +218,7 @@
         // padding: 2rem;
         
         h2{
-            font-family: $Bold;
+            font-weight: $Bold;
             text-align: center;
             font-size: 3.2rem;
         }
@@ -225,7 +226,7 @@
         p{
             font-size: 1.4rem;
             margin-top: 2rem;
-            font-family: $Medium;
+            font-weight: $Medium;
         }
 
         div span{
@@ -262,7 +263,7 @@
             // padding: 2rem;
             
             h2{
-                font-family: $Bold;
+                font-weight: $Bold;
                 text-align: center;
                 font-size: 3.2rem;
             }
@@ -270,7 +271,7 @@
             p{
                 font-size: 1.7rem;
                 margin-top: 2rem;
-                font-family: $Medium;
+                font-weight: $Medium;
             }
     
             div span{
@@ -303,7 +304,7 @@
             padding: 2rem;
             
             h2{
-                font-family: $Bold;
+                font-weight: $Bold;
                 text-align: center;
                 font-size: 5rem;
             }
@@ -311,7 +312,7 @@
             p{
                 font-size: 1.7rem;
                 margin-top: 2rem;
-                font-family: $Medium;
+                font-weight: $Medium;
             }
     
             div span{
