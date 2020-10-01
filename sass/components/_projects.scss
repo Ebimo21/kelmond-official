@@ -257,6 +257,8 @@
 
 @media (min-width: 576px){
     .cta{
+        padding: 3rem 3rem 3rem 3rem;
+
 
         &__text{
 
@@ -290,9 +292,10 @@
 
 @media (min-width: 768px){
     .cta{
-        padding: 3rem 3rem 3rem 10rem;
+        padding: 3rem 3rem 3rem;
 
-        margin: 5rem -10rem;
+        margin: 0 -3rem 2rem -3rem;
+        // margin: 5rem -3rem 5rem -10rem;
 
         &__btn{
             margin-top: 5rem;
@@ -328,6 +331,9 @@
 
 @media (min-width: 992px){
     .cta{
-        margin: 5rem -10rem;
+        // margin: 5rem -10rem;
+
+        margin: 0 -10rem 5rem;
+
     }
 }

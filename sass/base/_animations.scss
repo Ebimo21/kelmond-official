@@ -1,12 +1,55 @@
-.slideup{
+.nav_slideup1{
     animation-name: slideup;
     animation-duration: .7s;
-    // animation-iteration-count: 3;
+    animation-delay: .1s;
+    // opacity: 1;
+    // animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
 }
 
-.slidedown{
-    animation: 2s slidedown; 
+.nav_slideup2{
+    animation-name: slideup;
+    animation-duration: .7s;
+    animation-delay: .12s;
+    // opacity: 1;
+    // animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;    
+    
+    
 }
+
+.nav_slideup3{
+    animation-name: slideup;
+    animation-duration: .7s;
+    animation-delay: .18s;
+    // opacity: 1;
+    // animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;    
+    
+
+    
+}
+
+.reverse{
+    animation-duration: 2s;
+    animation-direction: reverse !important; 
+}
+
+.nav_slideup4{
+    animation-name: slideup;
+    animation-duration: .7s;
+    animation-delay: .2s;
+    // opacity: 1;
+    // animation-fill-mode: forwards;
+    
+    animation-timing-function: ease-in-out;    
+}
+
+.nav_slidedown{
+    animation: .7s slidedown;
+    animation-delay: 10s;
+}
+
 .animate-projects{
     animation: 1s animate-projects;
     animation-fill-mode: forwards;
@@ -39,6 +82,8 @@
         opacity: 1;
     }
 
+    
+
     100%{
         transform: translate(-10rem);
         opacity: 1;
@@ -49,12 +94,17 @@
 @keyframes slideup{
     0%{
         opacity: 0;
-        transform: translateY(50rem);
+        transform: translateY(-1rem);
     }
 
+    50%{
+        opacity: .3;
+    }
+
+
     100%{
-        opacity: 1;
-        transform: translateY(13rem);
+        opacity: 1; 
+        transform: translateY(0);
     }
 }
 
@@ -64,6 +114,7 @@
         transform: translateY(-50rem);
     }
 
+    
     100%{
         opacity: 1;
         transform: translateY(13rem);
@@ -84,7 +135,7 @@
 }
 
 .project img{
-    animation: 1s floating infinite;
+    animation: 1.3s floating infinite;
     animation-direction: alternate;
 }
 
@@ -97,6 +148,32 @@
 
     100%{
         // opacity: 1;
-        transform: rotateY(13deg) translate(80px, 55px) scale(1.6);
+        transform: rotateY(15deg) translate(82px, 60px) scale(1.6);
+    }
+}
+
+.nav_area_down{
+    height: 100%;
+    animation: all 2s;
+    animation-delay: 2s;
+}
+
+
+.show{
+    animation: 2.5s show;
+    animation-fill-mode: forwards;
+}
+
+@keyframes show{
+    0%{
+        opacity: 0;
+    }
+
+    70%{
+        opacity: 1;
+    }
+
+    100%{
+        opacity: 1;
     }
 }

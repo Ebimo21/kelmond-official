@@ -1,27 +1,57 @@
 var nav_state = "close";
-var link = document.getElementById('link');
-var social = document.getElementById('social');
+var link1 = document.getElementById('link1');
+var link2 = document.getElementById('link2');
+var link3 = document.getElementById('link3');
+var link4 = document.getElementById('link4');
+var social = document.getElementsByClassName('social-a');
+const menuBtn = document.querySelector(".header__navIcon");
 
 function open_menu(){
-
+    
     if(nav_state == "close"){
-    console.log("except");
-    document.getElementById('menu').style.height = "100%";
+        console.log("except");
+        document.getElementById('menu').style.height = "100%";
+    
+        for(i=0; i<social.length; i++){
+            var socialist = social[i];
 
-    link.classList.add("slideup");
-    social.classList.add("slidedown");
+            socialist.classList.add('show');
 
-    nav_state = "open"
+        }
+
+        link1.classList.add("nav_slideup1");
+        link2.classList.add("nav_slideup2");
+        link3.classList.add("nav_slideup3");
+        link4.classList.add("nav_slideup4");
+
+        // social.classList.add("nav_slidedown");
+        menuBtn.classList.add('open');
+        
+        nav_state = "open"
     }
     else{
         document.getElementById('menu').style.height = "0%";
-
-        link.classList.remove("slideup");
-        social.classList.remove("slidedown");
+        
+        
+        for(i=0; i<social.length; i++){
+            var socialist = social[i];
+            
+            socialist.classList.remove('show');
+            
+        }
+        
+        link1.classList.remove("nav_slideup1");
+        link2.classList.remove("nav_slideup2");
+        link3.classList.remove("nav_slideup3");
+        link4.classList.remove("nav_slideup4");
+        
+        
+        // social.classList.remove("slidedown");
+        menuBtn.classList.remove('open');
         nav_state = "close";
     }
-
-
+    
+    
 }
 
 
@@ -64,4 +94,7 @@ function init(){
     
     init();
     checkPosition();
+
+
+
 

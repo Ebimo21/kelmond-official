@@ -16,6 +16,7 @@ html {
 body {
     box-sizing: border-box;
     padding: 5rem 1.5rem 0;
+    color: black;
     font-family: "Montserrat" !important;
 
    
@@ -25,6 +26,14 @@ a{
     color: white;
 }
 
+
+a:hover{
+    color: white;
+}
+
+a:active{
+    color: yellow;
+}
 a:hover{
     text-decoration: none;
 }
