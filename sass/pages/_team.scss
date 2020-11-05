@@ -15,23 +15,93 @@
         padding-left: 0;
         padding-right: 0;
     }
-    div{
-        // height: 55rem;
-        img{
-            display: block;
-            margin: auto;
+
+    p.hr{
+        border-bottom: .1rem solid red;
+    }
+    
+    > div{
+
+        padding-left: 0;
+        padding-right: 0;
+
+        >div{
+
+                    // height: 55rem;
+        margin-bottom: 3rem;
+        
+    
+        .contain{
+            position: relative;
+            overflow: hidden;
+            border-radius: 1rem;
+            
+            img{
+                display: block;
+                margin: auto;
+                transition: all .5s ease-in-out;
+            }
+
+            .overlay{
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                overflow: hidden;
+                width: 100%;
+                height:100%;
+                transform: scale(0);
+            background-color: rgba(97, 97, 99, 0.466);
+
+                transition: all .3s ease;
+
+                .text{
+                    font-size: 2rem;
+                    text-align: center;
+                    color: white;
+                    font-weight: 800;
+                    position: absolute;
+                    top: 55%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    z-index: 9;
+                }
+            }
+
+            
         }
+
+        .contain:hover::before{
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            // background-color: rgba(99, 97, 97, 0.366);
+        }
+
+        .contain:hover .overlay{
+            transform: scale(1.2);
+        }
+
+        .contain:hover img{
+            transform: scale(1.1);
+        }
+
 
         h3{
             font-weight: $Semi_Bold;
             text-align: center;
+            font-size: 1.4rem;
+            margin-top: .8rem;
 
             p{
+                font-size: 1.2rem;
                 font-weight: initial;
             }
             
         }
-        margin-bottom: 3rem;
+        }
     }
 }
 
@@ -100,27 +170,27 @@
 @media (min-width: 576px){
     .team{
         > h2{
-            font-size: 5rem;
+            // font-size: 5rem;
         }
 
         p{
-            font-size: 2rem;
+            // font-size: 2rem;
         }
     }
 
     .section__expertise{
 
         h2{
-            font-size: 5rem;
+            // font-size: 5rem;
         }
         
         ul{
-            font-size: 2rem;
+            // font-size: 2rem;
             font-weight: $Extra_Bold;
         }
 
         p{
-            font-size: 2rem;
+            // font-size: 2rem;
         }
     }
 

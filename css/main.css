@@ -587,6 +587,9 @@ a:hover {
   .cta {
     margin: 0 -10rem 5rem;
   }
+  .cta__text {
+    margin-left: 7rem;
+  }
 }
 
 .footer {
@@ -789,7 +792,7 @@ a:hover {
   display: inline-block;
   position: absolute;
   top: 8.4rem;
-  left: -1.3rem;
+  left: -2rem;
   font-size: 2rem;
 }
 
@@ -881,6 +884,7 @@ div#menu div p {
 @media (min-width: 998px) {
   div#menu a img {
     left: 11rem;
+    top: 5rem;
   }
   div#menu div {
     -webkit-transform: translate(0, 5vh);
@@ -912,21 +916,87 @@ div#menu div p {
   padding-right: 0;
 }
 
-.team div {
+.team p.hr {
+  border-bottom: .1rem solid red;
+}
+
+.team > div {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.team > div > div {
   margin-bottom: 3rem;
 }
 
-.team div img {
+.team > div > div .contain {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+
+.team > div > div .contain img {
   display: block;
   margin: auto;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
 }
 
-.team div h3 {
+.team > div > div .contain .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  background-color: rgba(97, 97, 99, 0.466);
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.team > div > div .contain .overlay .text {
+  font-size: 2rem;
+  text-align: center;
+  color: white;
+  font-weight: 800;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 9;
+}
+
+.team > div > div .contain:hover::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.team > div > div .contain:hover .overlay {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.team > div > div .contain:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.team > div > div h3 {
   font-weight: 600;
   text-align: center;
+  font-size: 1.4rem;
+  margin-top: .8rem;
 }
 
-.team div h3 p {
+.team > div > div h3 p {
+  font-size: 1.2rem;
   font-weight: initial;
 }
 
@@ -990,21 +1060,8 @@ div#menu div p {
 }
 
 @media (min-width: 576px) {
-  .team > h2 {
-    font-size: 5rem;
-  }
-  .team p {
-    font-size: 2rem;
-  }
-  .section__expertise h2 {
-    font-size: 5rem;
-  }
   .section__expertise ul {
-    font-size: 2rem;
     font-weight: 800;
-  }
-  .section__expertise p {
-    font-size: 2rem;
   }
   .section__clients {
     height: initial;
@@ -1025,3 +1082,4 @@ div#menu div p {
     margin-top: 1rem;
   }
 }
+/*# sourceMappingURL=main.css.map */
