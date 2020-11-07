@@ -136,10 +136,11 @@
         margin-top: 3rem;
         padding:1.5rem;
         font-size: 1.1rem;
-
+        
         p{
             font-weight: $Bold;
             margin-top: 1.5rem;
+            font-size: 1.6rem;
             span{
                 padding:0;
                 font-weight: $Medium;            }
@@ -152,7 +153,8 @@
         }
 
         p:last-child {
-            font-weight: inherit;
+            font-weight: 100;
+            font-size: 1.4rem;
         }
 
         .checked{
@@ -170,12 +172,9 @@
     
         h2{
             font-weight: $Bold;
-            font-size: 5rem;
+            font-size: 3rem;
         }
-    
-        p{
-            font-size: 1.7rem;
-        }
+
     }
 
     
@@ -190,6 +189,20 @@
     .project{
 
         height: 150rem;
+    }
+
+    .section{
+
+        padding: 2.4rem;
+    
+        h2{
+            font-weight: $Bold;
+            font-size: 4rem;
+        }
+    
+        p{
+            font-size: 1.5rem;
+        }
     }
 }
 
@@ -220,7 +233,7 @@
         h2{
             font-weight: $Bold;
             text-align: center;
-            font-size: 3.2rem;
+            font-size: 3rem;
         }
 
         p{
@@ -262,16 +275,13 @@
 
         &__text{
 
-            // padding: 2rem;
-            
             h2{
                 font-weight: $Bold;
                 text-align: center;
-                font-size: 3.2rem;
             }
     
             p{
-                font-size: 1.7rem;
+                font-size: 1.4rem;
                 margin-top: 2rem;
                 font-weight: $Medium;
             }
@@ -309,11 +319,11 @@
             h2{
                 font-weight: $Bold;
                 text-align: center;
-                font-size: 5rem;
+                font-size: 4rem;
             }
     
             p{
-                font-size: 1.7rem;
+                font-size: 1.5rem;
                 margin-top: 2rem;
                 font-weight: $Medium;
             }
@@ -330,14 +340,25 @@
 }
 
 @media (min-width: 992px){
-    .cta{
-        // margin: 5rem -10rem;
 
-        margin: 0 -10rem 5rem;
+    .cta{
+        padding: 3rem 13rem 3rem;
+
+        margin: 0 -13rem 2rem -13rem;
 
         &__text{
-            margin-left: 7rem;
+
+            h2{
+                font-size: 5rem;
+            }
+    
+            p{
+                font-size: 1.6rem;
+
+            }
+
         }
 
+        
     }
 }

@@ -157,7 +157,7 @@
     }
 
     &--card{
-        height: 70rem;
+        // height: 70rem;
         padding: 1rem 0;
         align-content: space-around;
 
@@ -167,51 +167,114 @@
     }
 }
 
-@media (min-width: 576px){
+@media (min-width: 768px){
+
     .team{
-        > h2{
-            // font-size: 5rem;
+
+        >h2{
+            font-size: 4rem;
+        }
+    
+        p{
+            font-size: 1.5rem;
+        }
+    
+        > div{
+    
+    
+            h3{
+                font-size: 1.4rem;
+
+                p{
+                    font-size: 1.2rem;
+                }
+                
+            }
+        }
+    }
+
+
+    .section__clients{
+
+        h2{
+            font-size: 4rem;
         }
 
         p{
-            // font-size: 2rem;
+            font-size: 1.5rem;
         }
+
     }
+
 
     .section__expertise{
 
         h2{
-            // font-size: 5rem;
+            font-size: 4rem;
         }
-        
-        ul{
-            // font-size: 2rem;
-            font-weight: $Extra_Bold;
-        }
-
+    
         p{
-            // font-size: 2rem;
+            font-size: 1.5rem;
+        }
+    
+        section{
+            font-size: 1.5rem;
+        }
+    }
+    
+    
+}
+
+@media (min-width: 992px){
+
+    .team{
+
+        >h2{
+            font-size: 5rem;
+        }
+    
+        p{
+            font-size: 1.6rem;
+        }
+    
+        > div{
+    
+    
+            h3{
+                font-size: 1.4rem;
+
+                p{
+                    font-size: 1.2rem;
+                }
+                
+            }
         }
     }
 
     .section__clients{
-       height: initial;
+
         h2{
             font-size: 5rem;
         }
 
         p{
-            font-size: 2rem;
+            font-size: 1.6rem;
         }
 
-        &--card{
-            height: 30rem;
-            padding: 1rem 0;
-            align-content: space-around;
+    }
+
+    .section__expertise{
+
+        h2{
+            font-size: 5rem;
+        }
     
-            img{
-                margin-top: 1rem;
-            }
+        p{
+            font-size: 1.6rem;
+        }
+    
+        section{
+            font-size: 1.6rem;
         }
     }
     

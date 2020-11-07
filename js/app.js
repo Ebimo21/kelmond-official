@@ -9,7 +9,6 @@ const menuBtn = document.querySelector(".header__navIcon");
 function open_menu(){
     
     if(nav_state == "close"){
-        console.log("except");
         document.getElementById('menu').style.height = "100%";
     
         for(i=0; i<social.length; i++){
@@ -73,7 +72,6 @@ function init(){
         var positionFromTop = elements[i].getBoundingClientRect().top;
         var element = elements[i];
 
-        console.log("positionfromtop = " + positionFromTop + "windowHeight: " + windowHeight );
             if(positionFromTop - windowHeight <= 0){
                 element.classList.add('animate-projects');
 

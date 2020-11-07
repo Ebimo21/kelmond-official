@@ -445,6 +445,7 @@ a:hover {
 .review__comment p {
   font-weight: 700;
   margin-top: 1.5rem;
+  font-size: 1.6rem;
 }
 
 .review__comment p span {
@@ -457,7 +458,8 @@ a:hover {
 }
 
 .review__comment p:last-child {
-  font-weight: inherit;
+  font-weight: 100;
+  font-size: 1.4rem;
 }
 
 .review__comment .checked {
@@ -470,10 +472,7 @@ a:hover {
   }
   .section h2 {
     font-weight: 700;
-    font-size: 5rem;
-  }
-  .section p {
-    font-size: 1.7rem;
+    font-size: 3rem;
   }
   .project {
     height: 155rem;
@@ -483,6 +482,16 @@ a:hover {
 @media (min-width: 768px) {
   .project {
     height: 150rem;
+  }
+  .section {
+    padding: 2.4rem;
+  }
+  .section h2 {
+    font-weight: 700;
+    font-size: 4rem;
+  }
+  .section p {
+    font-size: 1.5rem;
   }
 }
 
@@ -507,7 +516,7 @@ a:hover {
 .cta__text h2 {
   font-weight: 700;
   text-align: center;
-  font-size: 3.2rem;
+  font-size: 3rem;
 }
 
 .cta__text p {
@@ -542,10 +551,9 @@ a:hover {
   .cta__text h2 {
     font-weight: 700;
     text-align: center;
-    font-size: 3.2rem;
   }
   .cta__text p {
-    font-size: 1.7rem;
+    font-size: 1.4rem;
     margin-top: 2rem;
     font-weight: 500;
   }
@@ -571,10 +579,10 @@ a:hover {
   .cta__text h2 {
     font-weight: 700;
     text-align: center;
-    font-size: 5rem;
+    font-size: 4rem;
   }
   .cta__text p {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     margin-top: 2rem;
     font-weight: 500;
   }
@@ -585,10 +593,14 @@ a:hover {
 
 @media (min-width: 992px) {
   .cta {
-    margin: 0 -10rem 5rem;
+    padding: 3rem 13rem 3rem;
+    margin: 0 -13rem 2rem -13rem;
   }
-  .cta__text {
-    margin-left: 7rem;
+  .cta__text h2 {
+    font-size: 5rem;
+  }
+  .cta__text p {
+    font-size: 1.6rem;
   }
 }
 
@@ -881,7 +893,7 @@ div#menu div p {
   }
 }
 
-@media (min-width: 998px) {
+@media (min-width: 992px) {
   div#menu a img {
     left: 11rem;
     top: 5rem;
@@ -1049,7 +1061,6 @@ div#menu div p {
 }
 
 .section__clients--card {
-  height: 70rem;
   padding: 1rem 0;
   -ms-flex-line-pack: distribute;
       align-content: space-around;
@@ -1059,27 +1070,63 @@ div#menu div p {
   margin-top: 1rem;
 }
 
-@media (min-width: 576px) {
-  .section__expertise ul {
-    font-weight: 800;
+@media (min-width: 768px) {
+  .team > h2 {
+    font-size: 4rem;
   }
-  .section__clients {
-    height: initial;
+  .team p {
+    font-size: 1.5rem;
+  }
+  .team > div h3 {
+    font-size: 1.4rem;
+  }
+  .team > div h3 p {
+    font-size: 1.2rem;
+  }
+  .section__clients h2 {
+    font-size: 4rem;
+  }
+  .section__clients p {
+    font-size: 1.5rem;
+  }
+  .section__expertise h2 {
+    font-size: 4rem;
+  }
+  .section__expertise p {
+    font-size: 1.5rem;
+  }
+  .section__expertise section {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .team > h2 {
+    font-size: 5rem;
+  }
+  .team p {
+    font-size: 1.6rem;
+  }
+  .team > div h3 {
+    font-size: 1.4rem;
+  }
+  .team > div h3 p {
+    font-size: 1.2rem;
   }
   .section__clients h2 {
     font-size: 5rem;
   }
   .section__clients p {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
-  .section__clients--card {
-    height: 30rem;
-    padding: 1rem 0;
-    -ms-flex-line-pack: distribute;
-        align-content: space-around;
+  .section__expertise h2 {
+    font-size: 5rem;
   }
-  .section__clients--card img {
-    margin-top: 1rem;
+  .section__expertise p {
+    font-size: 1.6rem;
+  }
+  .section__expertise section {
+    font-size: 1.6rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
