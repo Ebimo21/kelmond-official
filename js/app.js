@@ -4,7 +4,7 @@ var link2 = document.getElementById('link2');
 var link3 = document.getElementById('link3');
 var link4 = document.getElementById('link4');
 var social = document.getElementsByClassName('social-a');
-const menuBtn = document.querySelector(".header__navIcon");
+const menuBtn = document.querySelector(".navIcon");
 
 function open_menu(){
     
@@ -93,6 +93,9 @@ function init(){
     init();
     checkPosition();
 
+    var d = new Date();
+    var date = d.getFullYear();
 
+    var span_copyr = document.getElementById("copy-rt");
 
-
+    span_copyr.innerHTML =  "&copy; " + date;

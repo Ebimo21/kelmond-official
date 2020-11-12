@@ -1,0 +1,170 @@
+.headerProject{
+
+    background-image: url('../../assets/projectcover4.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    display: block;
+
+    position: relative;
+    height: 90vh;
+
+    & > img{
+        position: absolute;
+        right: 1rem;
+        margin-top: .5rem;
+    }
+    
+
+    &__navIcon{
+
+        position: absolute;
+        right: 1rem;
+        top: .4rem;
+        z-index: 3;
+        // padding: .1rem;
+        cursor: pointer;
+
+        padding: 1rem 0 1rem 2rem;
+
+        &--bar{
+            height: .2rem;
+            width: 2rem;
+            background-color: black;
+            // border-radius: 35%;
+            display: inline-block;
+            transition: all .7s ease-in-out;
+        }
+        
+        &--bar::before, &--bar::after{
+            position: absolute;
+            right: 0;
+            content: "";
+            background: black;
+
+            // border-radius: 25%;
+            transition: all .5s ease-in-out;
+        }
+        
+        &--bar::before{
+            height: .2rem;
+            width: 3rem;
+            transform: translateY(-.6rem);
+        }
+        
+        &--bar::after{
+            height: .2rem;
+            width:2.4rem;
+            
+            transform: translateY(.6rem);
+        }
+        
+        &.open &--bar{
+            transform: translateX(-50px);
+            background: transparent;
+            top: 0px;
+        }
+        
+        &.open &--bar::before{
+            transform: translate(45px, 1px) rotate(-45deg);
+            background: white;
+            width: 2rem;
+        }
+        
+        &.open &--bar::after{
+            transform: translate(45px, 1px) rotate(45deg);
+            background: white;
+            width: 2rem;
+        }
+        
+        
+    }
+    
+    &__text {
+        display: block;
+
+        font-size: 1rem;
+        position: relative;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+
+
+        & span{
+            display: block;
+        }
+
+        & span:nth-child(1){
+            font-size: 1.5rem;
+            font-weight: $Bold;
+        }
+    
+
+        & span:nth-child(2){
+            font-size: 4rem;
+            font-weight: $Bold;
+            letter-spacing: .3rem;
+
+            @media (min-width:768px){
+                font-size:6rem;
+                // font-weight: $SemiBold;
+            }
+        }
+
+        p{
+        font-size: 1.5vw;
+        margin-top: 4rem;
+        }
+
+    }
+
+
+    &__social{
+        position: absolute;
+        bottom: 0;
+        left:1.4rem;
+
+        i{
+            font-size: 1.7rem;
+            display:block;
+            color: #666;
+            margin-top: .5rem;
+        }
+    }
+
+    &__scroll{
+        position: absolute;
+        bottom: 2.3rem;
+        right:-1.5rem;
+        font-size: 1.7rem;
+        transform: rotate(-90deg);
+        cursor: pointer;
+        span{
+            padding-left: 1.7rem;
+            font-weight: $Extra_Bold;
+        }
+    }
+
+
+    &__logo{
+        display: inline-block;
+        position: absolute;
+        left: 1rem;
+    }
+
+    &__logo-text{
+        font-weight: $Extra_Bold;
+        transform: rotate(-90deg) ; 
+        display: inline-block;
+        position: absolute;
+        top: 8.4rem;
+        left: -2rem;
+        font-size: 2rem;
+    }
+
+    
+
+    
+}
+

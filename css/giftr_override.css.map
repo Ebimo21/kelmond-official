@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,IAAI,CAAA;EACA,OAAO,EAAE,CAAC;CACb;;AAED,AAAA,OAAO,CAAA;EACH,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,UAAW;CACvB",
+    "sources": [
+        "../sass/giftr_override.scss"
+    ],
+    "names": [],
+    "file": "giftr_override.css"
+}
