@@ -817,7 +817,7 @@ div#menu {
   height: 0%;
   width: 100%;
   overflow: hidden;
-  z-index: 1;
+  z-index: 2;
   -webkit-transition: all .5s ease-in;
   transition: all .5s ease-in;
 }
@@ -1067,13 +1067,19 @@ div#menu div p {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  padding: 3rem;
+  padding: 3rem 3rem 0;
 }
 
 .headerGiftr__container {
   position: relative;
   display: block;
   height: 90vh;
+}
+
+.headerGiftr__container__choco-image {
+  position: absolute;
+  right: 1rem;
+  top: 12rem;
 }
 
 .headerGiftr__container__navIcon {
@@ -1168,6 +1174,7 @@ div#menu div p {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  z-index: 1;
 }
 
 .headerGiftr__container__text span {
@@ -1232,6 +1239,75 @@ div#menu div p {
   top: 0;
   z-index: -1;
   left: 3rem;
+}
+
+.how {
+  padding: 3rem 3rem 0;
+  font-size: 1.6rem;
+}
+
+.how__container--box {
+  margin-top: 4rem;
+  border-radius: 2rem;
+  padding: 3rem;
+}
+
+.how__container--box img {
+  display: block;
+  margin: auto;
+}
+
+.how__container--box p {
+  width: 90%;
+  margin-top: 4rem;
+}
+
+.how__container--box .white_text {
+  color: white;
+}
+
+.rating {
+  color: lightgrey;
+  text-align: center;
+  padding: 3rem 3rem 1rem;
+}
+
+.rating__container--item {
+  margin-top: 6rem;
+}
+
+.rating__container--item p {
+  font-size: 5rem;
+  line-height: 1.5rem;
+  margin-top: 3rem;
+}
+
+.rating__container--item span {
+  font-size: 1.6rem;
+  color: red;
+}
+
+@media (min-width: 766px) {
+  .how {
+    padding: 3rem 3rem 0;
+    font-size: 1.6rem;
+  }
+  .how__container--box {
+    margin-left: 3rem;
+    border-radius: 2rem;
+    padding: 3rem;
+  }
+  .how__container--box img {
+    display: block;
+    margin: auto;
+  }
+  .how__container--box p {
+    width: 90%;
+    margin-top: 4rem;
+  }
+  .how__container--box .white_text {
+    color: white;
+  }
 }
 
 .team {
