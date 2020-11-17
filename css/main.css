@@ -1078,8 +1078,15 @@ div#menu div p {
 
 .headerGiftr__container__choco-image {
   position: absolute;
-  right: 1rem;
-  top: 12rem;
+  right: -3rem;
+  top: 8rem;
+  width: 60%;
+}
+
+@media (min-width: 922px) {
+  .headerGiftr__container__choco-image {
+    width: 45%;
+  }
 }
 
 .headerGiftr__container__navIcon {
@@ -1188,7 +1195,7 @@ div#menu div p {
   text-align: center;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   .headerGiftr__container__text span:nth-child(1) {
     text-align: left;
   }
@@ -1200,18 +1207,31 @@ div#menu div p {
   font-weight: 100;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   .headerGiftr__container__text span:nth-child(2) {
     font-weight: 300;
     font-size: 1.6rem;
     text-align: left;
-    width: 40%;
+    width: 50%;
   }
 }
 
 .headerGiftr__container__text p {
   font-size: 1.5vw;
   margin-top: 4rem;
+}
+
+@media (min-width: 576px) {
+  .headerGiftr__container__text {
+    margin-left: 4rem;
+  }
+}
+
+@media (min-width: 766px) {
+  .headerGiftr__container__text {
+    padding-left: 10%;
+    font-size: 8rem;
+  }
 }
 
 .headerGiftr__container__scroll {
@@ -1242,8 +1262,23 @@ div#menu div p {
 }
 
 .how {
+  margin-top: 5rem;
   padding: 3rem 3rem 0;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
+}
+
+.how__container {
+  margin: 0;
+  padding: 0;
+}
+
+.how__container h2 {
+  color: #F10001;
+  font-weight: 800;
+}
+
+.how__container h2 i {
+  color: initial;
 }
 
 .how__container--box {
@@ -1267,7 +1302,7 @@ div#menu div p {
 }
 
 .rating {
-  color: lightgrey;
+  color: #504f4f;
   text-align: center;
   padding: 3rem 3rem 1rem;
 }
@@ -1280,11 +1315,171 @@ div#menu div p {
   font-size: 5rem;
   line-height: 1.5rem;
   margin-top: 3rem;
+  font-weight: 800;
 }
 
 .rating__container--item span {
   font-size: 1.6rem;
   color: red;
+}
+
+.surprise {
+  padding: 3rem 3rem 1rem;
+  font-size: 1.6rem;
+}
+
+.surprise__container {
+  margin: 0;
+  padding: 0;
+}
+
+.surprise__container--img {
+  margin: 0;
+  padding: 0;
+}
+
+.surprise__container--img img {
+  margin-top: 2rem;
+}
+
+.surprise__container--text {
+  padding: 0;
+}
+
+.surprise__container--text h2 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.surprise__container--text span {
+  color: red;
+}
+
+.surprise__container--text p {
+  width: 90%;
+}
+
+.plans {
+  padding: 3rem 3rem 1rem;
+  background-color: #F10001;
+  color: white;
+  background-image: url("../../assets/Giftr/hand.png");
+  background-size: 300px;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-attachment: fixed;
+}
+
+.plans__container {
+  width: 70%;
+  margin: auto;
+  padding: 0;
+  padding-top: 2rem;
+}
+
+.plans__container--item {
+  padding-bottom: 4rem;
+  margin-bottom: 4rem;
+  border-bottom: 2px solid white;
+}
+
+@media (min-width: 576px) {
+  .plans__container--item {
+    border-bottom: none;
+    margin-bottom: 0;
+    border-right: .1px solid #EB5B5B;
+  }
+  .plans__container--item:last-child {
+    border-right: none;
+  }
+}
+
+.plans__container--item h2 {
+  font-size: 6rem;
+  font-weight: 800;
+  line-height: 3rem;
+}
+
+@media (min-width: 576px) {
+  .plans__container--item h2 {
+    line-height: 5rem;
+  }
+}
+
+@media (min-width: 766px) {
+  .plans__container--item h2 {
+    font-size: 7rem;
+    line-height: 5rem;
+  }
+}
+
+.plans__container--item p {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+@media (min-width: 576px) {
+  .plans__container--item p {
+    font-size: 2rem;
+  }
+}
+
+.plans__container--item button {
+  width: 8rem;
+  padding: .6rem 3rem;
+  font-size: 1.6rem;
+  margin-top: 4rem;
+}
+
+@media (min-width: 576px) {
+  .plans__container {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+@media (min-width: 766px) {
+  .plans__container {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .plans__container {
+    width: 80%;
+    margin: auto;
+  }
+}
+
+.partners {
+  padding: 3rem 3rem 1rem;
+}
+
+.partners__container {
+  margin: 0;
+  padding: 0;
+}
+
+.partners__container--item {
+  margin: 0;
+  padding: 0;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+.partners__container--item h2 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.partners__container--item p {
+  font-size: 1.6rem;
+}
+
+.partners__container--item img {
+  margin: 0;
+  padding: 0;
 }
 
 @media (min-width: 766px) {

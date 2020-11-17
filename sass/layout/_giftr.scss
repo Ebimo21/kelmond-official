@@ -14,8 +14,16 @@
 
         &__choco-image{
             position: absolute;
-            right: 1rem;
-            top: 12rem;
+            right: -3rem;
+            top: 8rem;
+            width: 60%;
+
+            @media (min-width: 922px){
+                width: 45%;
+
+
+
+            }
         }
 
         &__navIcon{
@@ -107,6 +115,7 @@
         }
         
         &__text {
+
             display: block;
             position: relative;
             top: 45%;
@@ -125,7 +134,7 @@
                 letter-spacing: .3rem;
                 text-align: center;
     
-                @media (min-width:768px){
+                @media (min-width:576px){
                     text-align: left;    
                 }
             }
@@ -136,11 +145,11 @@
                 font-weight: 100;
                 
                 
-                @media (min-width:768px){
+                @media (min-width:576px){
                     font-weight: 300;
                     font-size: 1.6rem;
                     text-align: left;
-                    width: 40%;
+                    width: 50%;
     
                 }
             }
@@ -148,6 +157,16 @@
             p{
             font-size: 1.5vw;
             margin-top: 4rem;
+            }
+
+            @media (min-width:576px){
+                margin-left: 4rem;
+
+            }
+            @media (min-width:766px){
+                padding-left: 10%;
+                font-size: 8rem
+
             }
     
         }
@@ -183,11 +202,24 @@
 }
 
 .how{
+    margin-top: 5rem;
     padding: 3rem 3rem 0;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     // color: white;
 
     &__container{
+
+        margin: 0;
+        padding: 0;
+
+        h2{
+            color: #F10001;
+            font-weight: 800;
+
+            i{
+                color: initial;
+            }
+        }
 
         
         &--box{
@@ -213,7 +245,10 @@
         
         }
 
+        @media (min-width:576px){
+            // margin-left: 4rem;
 
+        }
     
     }
 
@@ -222,7 +257,7 @@
 }
 
 .rating{
-    color: lightgrey;
+    color: rgb(80, 79, 79);
     text-align: center;
     padding: 3rem 3rem 1rem;
 
@@ -236,6 +271,7 @@
                 font-size: 5rem;
                 line-height: 1.5rem;
                 margin-top: 3rem;
+                font-weight: 800;
             }
             
             span{
@@ -245,6 +281,171 @@
                 
 
             }
+        }
+    }
+}
+
+.surprise{
+
+    padding: 3rem 3rem 1rem;
+    font-size: 1.6rem;
+    &__container{
+        margin: 0;
+        padding: 0;
+
+        &--img{
+            margin: 0;
+            padding: 0;
+
+            img{
+                margin-top: 2rem;
+            }
+        }
+
+        &--text{
+
+            padding: 0;
+
+            h2{
+                font-size: 4rem;
+                font-weight: 700;
+            }
+
+            span{
+                color: red;
+
+            }
+
+            p{
+                width: 90%;
+            }
+            
+        }
+
+        @media (min-width:576px){
+            // margin-left: 4rem;
+
+        }
+    }
+
+
+}
+
+.plans{
+    padding: 3rem 3rem 1rem;
+    background-color: #F10001;
+    color: white;
+    background-image: url("../../assets/Giftr/hand.png");
+    background-size: 300px;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-attachment: fixed;
+
+    &__container{
+        width: 70%;
+        margin: auto;
+        // margin-left: 5rem;
+        padding: 0;
+        padding-top: 2rem;
+
+        &--item{
+            padding-bottom: 4rem;
+            margin-bottom: 4rem;
+            border-bottom: 2px solid white;
+
+            @media(min-width:576px){
+                border-bottom: none;
+                margin-bottom: 0;
+                border-right: .1px solid #EB5B5B;
+                
+                &:last-child{
+                    border-right: none;
+                    
+                }
+            }
+
+            h2{
+                font-size: 6rem;
+                font-weight: 800;
+                line-height: 3rem;
+
+                @media(min-width:576px){
+                    // font-size: 8rem;
+                    line-height: 5rem;
+                }
+
+                @media(min-width:766px){
+                    font-size: 7rem;
+                    line-height: 5rem;
+                }
+            }
+            
+            p{
+                font-size: 2rem;
+                font-weight: 600;
+
+                @media(min-width:576px){
+                    font-size: 2rem;
+                }
+            }
+
+            button{
+                width: 8rem;
+                padding: .6rem 3rem;
+                font-size: 1.6rem;
+                margin-top: 4rem;
+            }
+
+        }
+
+        @media(min-width: 576px){
+            width: 100%;
+            margin: 0;
+        }
+
+        @media(min-width: 766px){
+            width:100%;
+            margin: 0;
+        }
+
+        @media(min-width: 992px){
+            width:80%;
+            margin: auto;
+        }
+    }
+}
+
+.partners{
+
+    padding: 3rem 3rem 1rem;
+
+
+    &__container{
+
+        margin: 0;
+        padding: 0;
+
+        &--item{
+            margin: 0;
+            padding: 0;
+
+            margin-top: 3rem;
+            margin-bottom: 1rem;
+
+            h2{
+                font-size: 3rem;
+                font-weight: 700;
+            }
+
+            p{
+                font-size: 1.6rem;
+            }
+
+            img{
+                margin: 0;
+                padding: 0;
+            }
+
         }
     }
 }
@@ -259,7 +460,6 @@
     
         &__container{
     
-            
             &--box{
                 margin-left: 3rem;
                 border-radius: 2rem;
