@@ -10,7 +10,7 @@
         position: relative;
 
         display: block;
-        height: 90vh;
+        height: 67rem;
 
         &__choco-image{
             position: absolute;
@@ -18,7 +18,7 @@
             top: 8rem;
             width: 60%;
 
-            @media (min-width: 922px){
+            @media (min-width: 992px){
                 width: 45%;
 
 
@@ -137,6 +137,14 @@
                 @media (min-width:576px){
                     text-align: left;    
                 }
+
+                @media (min-width:768px){
+                    font-size: 7rem;
+                }
+
+                @media (min-width:992px){
+                    font-size: 10rem;    
+                }
             }
 
             & span:nth-child(2){
@@ -161,9 +169,10 @@
 
             @media (min-width:576px){
                 margin-left: 4rem;
+                
 
             }
-            @media (min-width:766px){
+            @media (min-width:768px){
                 padding-left: 10%;
                 font-size: 8rem
 
@@ -374,7 +383,7 @@
                     line-height: 5rem;
                 }
 
-                @media(min-width:766px){
+                @media(min-width:768px){
                     font-size: 7rem;
                     line-height: 5rem;
                 }
@@ -403,7 +412,7 @@
             margin: 0;
         }
 
-        @media(min-width: 766px){
+        @media(min-width: 768px){
             width:100%;
             margin: 0;
         }
@@ -447,11 +456,21 @@
             }
 
         }
+
+        @media (min-width: 576px){
+
+            height: 22rem;
+        }
+
+        @media (min-width: 768px){
+
+            height: 24rem;
+        }
     }
 }
 
 
-@media (min-width: 766px){
+@media (min-width: 768px){
     
     .how{
         padding: 3rem 3rem 0;

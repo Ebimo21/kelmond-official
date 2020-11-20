@@ -1,0 +1,214 @@
+.headerGiftrPackage{
+
+    background-image: url("../../assets/Giftr/giftr_circlefade2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 3rem 3rem 0;
+
+    &__container{
+        position: relative;
+
+        display: block;
+        height: 67rem;
+
+        &__choco-image{
+            position: absolute;
+            right: -3rem;
+            top: 8rem;
+            width: 40%;
+
+            @media (min-width: 768px){
+                width: 30%;
+            }
+
+            @media (min-width: 992px){
+                width: 40%;
+            }
+        }
+
+        &__navIcon{
+
+            position: absolute;
+            right: 1rem;
+            top: .4rem;
+            z-index: 3;
+            // padding: .1rem;
+            cursor: pointer;
+    
+            padding: 1rem 0 1rem 2rem;
+    
+            &--bar{
+                height: .2rem;
+                width: 2rem;
+                background-color: black;
+                // border-radius: 35%;
+                display: inline-block;
+                transition: all .7s ease-in-out;
+            }
+            
+            &--bar::before, &--bar::after{
+                position: absolute;
+                right: 0;
+                content: "";
+                background: black;
+    
+                // border-radius: 25%;
+                transition: all .5s ease-in-out;
+            }
+            
+            &--bar::before{
+                height: .2rem;
+                width: 3rem;
+                transform: translateY(-.6rem);
+            }
+            
+            &--bar::after{
+                height: .2rem;
+                width:2.4rem;
+                
+                transform: translateY(.6rem);
+            }
+            
+            &.open &--bar{
+                transform: translateX(-50px);
+                background: transparent;
+                top: 0px;
+            }
+            
+            &.open &--bar::before{
+                transform: translate(45px, 1px) rotate(-45deg);
+                background: white;
+                width: 2rem;
+            }
+            
+            &.open &--bar::after{
+                transform: translate(45px, 1px) rotate(45deg);
+                background: white;
+                width: 2rem;
+            }
+            
+            
+        }
+
+        &__social{
+            position: absolute;
+            bottom: 0;
+            left:1.4rem;
+    
+            i{
+                font-size: 1.7rem;
+                display:block;
+                color: #666;
+                margin-top: .5rem;
+            }
+        }
+        
+    
+        &__navLink{
+            position: absolute;
+            font-size: 1.6rem;
+            right: 0;
+    
+            a{
+                color: black;
+            }
+        }
+        
+        &__text {
+
+            display: block;
+            position: relative;
+            top: 45%;
+            left: 50%;
+            transform: translate(-50%, -150%);
+            z-index: 1;
+
+    
+            & span{
+                display: block;
+            }
+    
+            & span:nth-child(1){
+                font-size: 5rem;
+                font-weight: $Bold;
+                letter-spacing: .3rem;
+                text-align: center;
+    
+                @media (min-width:576px){
+                    text-align: left;    
+                }
+
+                @media (min-width:768px){
+                    font-size: 7rem;
+                }
+
+                @media (min-width:992px){
+                    font-size: 6rem;    
+                }
+            }
+
+            & span:nth-child(2){
+                font-size: 1.8rem;
+                text-align: center;
+                font-weight: 400;
+                margin-top: 1rem;
+                
+                
+                @media (min-width:576px){
+                    font-weight: 500;
+                    font-size: 1.8rem;
+                    text-align: left;
+                    width: 50%;
+                    margin-top: 2rem;
+    
+                }
+            }
+    
+            p{
+            font-size: 1.5vw;
+            margin-top: 4rem;
+            }
+
+            @media (min-width:576px){
+                margin-left: 4rem;
+                
+
+            }
+            @media (min-width:768px){
+                padding-left: 10%;
+                font-size: 8rem
+
+            }
+    
+        }
+    
+        &__scroll{
+            position: absolute;
+            top: 35.3rem;
+            left:-1.5rem;
+            font-size: 1.7rem;
+            transform: rotate(-90deg);
+            cursor: pointer;
+            span{
+                padding-left: 1.7rem;
+                font-weight: $Extra_Bold;
+            }
+        }
+    
+    
+        &__logo{
+            display: inline-block;
+            position: absolute;
+        }
+    
+        svg{
+            position: absolute;
+            top: 0;
+            z-index: -1;
+            left: 3rem;
+        }
+    }
+
+    
+}
