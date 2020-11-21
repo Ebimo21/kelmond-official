@@ -2076,6 +2076,136 @@ div#menu div p {
   left: 3rem;
 }
 
+.classes {
+  color: white;
+  background-color: black;
+  padding-bottom: 4rem;
+}
+
+.classes__container {
+  color: #696767;
+  width: 95%;
+  margin: auto;
+  padding: 4rem 0;
+}
+
+.classes__container--course {
+  background-color: #fbfbfb;
+  margin-top: 4rem;
+  padding: 2rem !important;
+  border-radius: 1rem;
+  height: 35rem;
+  position: relative;
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .classes__container--course:nth-child(2), .classes__container--course:nth-child(4), .classes__container--course:nth-child(6) {
+    margin-left: 4rem;
+    padding: 1rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .classes__container--course:nth-child(2), .classes__container--course:nth-child(4), .classes__container--course:nth-child(6) {
+    margin-left: 3rem;
+  }
+}
+
+@media (min-width: 998px) {
+  .classes__container--course:nth-child(2), .classes__container--course:nth-child(3), .classes__container--course:nth-child(5), .classes__container--course:nth-child(6) {
+    margin-left: 5rem;
+  }
+}
+
+.classes__container--course h2 {
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+
+@media (min-width: 576px) {
+  .classes__container--course h2 {
+    font-size: 1.8;
+  }
+}
+
+.classes__container--course p {
+  font-size: 1.5rem;
+}
+
+@media (min-width: 576px) {
+  .classes__container--course p {
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .classes__container--course p {
+    font-size: 1.3rem;
+  }
+}
+
+.classes__container--course:first-child {
+  background-color: #696767;
+  color: white;
+}
+
+.classes__container--course span {
+  background-color: #d2d3d5;
+  width: 2.2rem;
+  font-size: 1.4rem;
+  padding: .2rem;
+  border-radius: 2rem;
+  text-align: center;
+  color: #606062;
+}
+
+@media (min-width: 576px) {
+  .classes__container {
+    width: 90%;
+  }
+}
+
+.upcoming {
+  background-image: url("../../assets/learn/upcomingbg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.upcoming__container {
+  padding: 3rem 3rem 1rem;
+}
+
+.upcoming__container h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.upcoming__container--item {
+  margin-bottom: 5rem;
+}
+
+.upcoming__container--item h3 {
+  font-weight: 600;
+  font-size: 2.5rem;
+}
+
+.upcoming__container--item h4 {
+  font-size: 1.6rem;
+}
+
+.upcoming__container--item p {
+  font-size: 1.6rem;
+}
+
+.upcoming__container--item button {
+  font-size: 1.4rem;
+  font-weight: 600;
+  padding: .5rem 1rem;
+  width: 10rem;
+  border-radius: 2rem;
+}
+
 .team {
   margin: 2rem;
 }
