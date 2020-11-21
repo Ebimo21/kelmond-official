@@ -99,3 +99,35 @@ function init(){
     var span_copyr = document.getElementById("copy-rt");
 
     span_copyr.innerHTML =  "&copy; " + date;
+
+
+
+    var bit = document.getElementsByClassName('show');    
+    var i;
+
+    
+
+    function myFunction(x){
+        if(x.matches){
+
+            for(i=0; i<bit.length; i++){
+                bit[i].addEventListener("click", function() {
+            
+                    var content = this.previousElementSibling;
+            
+                    content.classList.toggle('collapse');
+                
+                  });
+                }
+        }
+
+        
+    }
+    
+    var x = window.matchMedia("(max-width: 576px");
+
+    myFunction(x);
+
+    x.addEventListener(myFunction);
+
+    

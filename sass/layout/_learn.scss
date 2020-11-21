@@ -1,4 +1,4 @@
-.headerGiftrPackage{
+.headerLearn{
 
     background-image: url("../../assets/Giftr/giftr_circlefade2.png");
     background-size: cover;
@@ -12,18 +12,21 @@
         display: block;
         height: 67rem;
 
-        &__choco-image{
+        &__student-image{
             position: absolute;
             right: -3rem;
-            top: 8rem;
-            width: 40%;
-
-            @media (min-width: 768px){
-                width: 30%;
+            top: 32rem;
+            width: 70%;
+            
+            @media (min-width: 576px){
+                top: 20rem;
+                right: -3rem;
+                width: 47%;
             }
-
             @media (min-width: 992px){
-                width: 40%;
+                width: 30%;
+                right:2rem;
+                top: 10rem;
             }
         }
 
@@ -119,9 +122,9 @@
 
             display: block;
             position: relative;
-            top: 45%;
+            top: 35%;
             left: 50%;
-            transform: translate(-50%, -150%);
+            transform: translate(-50%, -50%);
             z-index: 1;
 
     
@@ -129,30 +132,30 @@
                 display: block;
             }
     
-            & span:nth-child(1){
-                font-size: 5rem;
+            & span.first{
+                font-size: 5.5rem;
                 font-weight: $Bold;
                 letter-spacing: .3rem;
                 text-align: center;
     
                 @media (min-width:576px){
-                    text-align: left;    
+                    text-align: left;
+                    font-size: 4.5rem;    
                 }
 
                 @media (min-width:768px){
-                    font-size: 7rem;
+                    font-size: 5.5rem;
                 }
 
                 @media (min-width:992px){
-                    font-size: 6rem;    
+                    font-size: 7rem;    
                 }
             }
 
-            & span:nth-child(2){
-                font-size: 1.8rem;
+            & span.second{
+                font-size: 1.5rem;
                 text-align: center;
-                font-weight: 400;
-                margin-top: 1rem;
+                font-weight: 100;
                 
                 
                 @media (min-width:576px){
@@ -165,18 +168,14 @@
                 }
             }
     
-            p{
-            font-size: 1.5vw;
-            margin-top: 4rem;
-            }
 
             @media (min-width:576px){
                 margin-left: 4rem;
-                
+                top: 50%;
 
             }
             @media (min-width:768px){
-                padding-left: 10%;
+                padding-left: 5%;
                 font-size: 8rem
 
             }
@@ -211,121 +210,4 @@
     }
 
     
-}
-
-.option{
-
-    color: $packageGrey;
-
-    &__container{
-
-        margin: 0;
-        padding: 0;
-
-        &--packages{
-            margin: 0;
-            padding: 0;
-
-            overflow: hidden;
-            border: .1rem solid lightgray;
-            border-radius: 2rem;
-            padding: 7rem 1rem 0;
-            margin-bottom: 3rem;
-
-
-            h2{
-                font-size: 5rem;
-                font-weight: 800;
-                color: initial;
-            }
-
-            > p{
-                font-size: 3rem;
-                font-weight: 700;
-            }
-
-            span{
-                font-size: 5rem;
-                margin-top: 1rem;
-
-                @media (min-width: 576px){
-                    font-size: 3rem;
-                }
-
-                
-            }
-
-
-
-            &--combo{
-                border-bottom: .1rem solid lightgray;
-                margin-top:3rem;
-
-                h3{
-                    font-size: 2rem;
-                    font-weight: 700;
-                }
-
-                p{
-                    font-size: 1.6rem;
-                }
-
-                &:last-child{
-                    border-bottom: none;
-                }
-            }
-
-            .show{
-                background-color: #666;
-                color: white;
-                padding: 1rem ;
-                margin: 0 -5rem;
-                width: 120%;
-                font-size: 1.8rem;
-
-                
-            }
-
-            .show:hover i {
-
-                animation-name: btn-ani;
-                animation-duration: .9s;
-                animation-iteration-count: 1;
-
-
-            }
-
-            .collapse{
-                max-height: 0;
-                transition: max-height 10s ease-out;
-            }
-
-            .call{
-
-            }
-
-
-
-        }
-
-        
-
-        &--packages:last-child span{
-
-            color: red;
-
-        }
-    }
-}
-
-
-@keyframes btn-ani{
-
-    from{
-        transform: translateY(0px);
-    }
-
-    to{
-        transform: translateY(50px);
-    }
 }
