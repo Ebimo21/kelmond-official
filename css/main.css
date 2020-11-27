@@ -1873,7 +1873,7 @@ div#menu div p {
 
 .headerLearn__container__student-image {
   position: absolute;
-  right: -3rem;
+  left: -3rem;
   top: 32rem;
   width: 70%;
 }
@@ -1881,6 +1881,7 @@ div#menu div p {
 @media (min-width: 576px) {
   .headerLearn__container__student-image {
     top: 20rem;
+    left: initial;
     right: -3rem;
     width: 47%;
   }
@@ -2169,16 +2170,24 @@ div#menu div p {
   background-image: url("../../assets/learn/upcomingbg.png");
   background-repeat: no-repeat;
   background-size: cover;
+  padding: 5rem 0;
+}
+
+.upcoming h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
 }
 
 .upcoming__container {
   padding: 3rem 3rem 1rem;
 }
 
-.upcoming__container h2 {
-  font-size: 3rem;
-  font-weight: 700;
-  margin-bottom: 2rem;
+.upcoming__container div > h2 {
+  background-color: #B2DCFF;
+  margin-left: -5rem;
+  padding: 1rem 0 1rem 5rem;
+  width: 30rem;
 }
 
 .upcoming__container--item {
@@ -2195,7 +2204,7 @@ div#menu div p {
 }
 
 .upcoming__container--item p {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
 }
 
 .upcoming__container--item button {
@@ -2204,6 +2213,110 @@ div#menu div p {
   padding: .5rem 1rem;
   width: 10rem;
   border-radius: 2rem;
+}
+
+@media (min-width: 576px) {
+  .upcoming__container--item--sect {
+    padding: 0 0 0 1.5rem !important;
+  }
+  .upcoming__container--item--sect:first-child {
+    padding-left: 0 !important;
+  }
+  .upcoming__container--item--sect:nth-child(3) {
+    padding-left: 0 !important;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .upcoming__container--item--sect:nth-child(4) {
+    padding-left: 0 !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .upcoming__container--item--sect:nth-child(1), .upcoming__container--item--sect:nth-child(2), .upcoming__container--item--sect:nth-child(3) {
+    border-right: 0.1px solid #ebebeb;
+  }
+  .upcoming__container--item--sect:nth-child(3) {
+    padding: 0 1.5rem !important;
+  }
+}
+
+@media (min-width: 576px) {
+  .upcoming__container {
+    width: 85%;
+    margin: auto;
+    background-color: white;
+  }
+}
+
+@media (min-width: 768px) {
+  .upcoming__container {
+    width: 95%;
+    margin: auto;
+    background-color: white;
+  }
+}
+
+@media (min-width: 992px) {
+  .upcoming__container {
+    width: 80%;
+    margin: auto;
+  }
+}
+
+.assurance {
+  padding: 6rem 3rem;
+}
+
+.assurance__container h2 {
+  font-size: 2.8rem;
+  font-size: 600;
+}
+
+.assurance__container--outer--inner {
+  margin-top: 3rem;
+}
+
+.assurance__container--outer--inner div img {
+  width: 20rem;
+  margin: auto;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 576px) {
+  .assurance__container--outer--inner div img {
+    width: 4rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .assurance__container--outer--inner div img {
+    width: 5rem;
+  }
+}
+
+.assurance__container--outer--inner h4 {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+@media (min-width: 768px) {
+  .assurance__container--outer--inner h4 {
+    font-size: 1.5rem;
+  }
+}
+
+.assurance__container--outer--inner p {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+@media (min-width: 768px) {
+  .assurance__container--outer--inner p {
+    font-size: 1.3rem;
+  }
 }
 
 .team {
